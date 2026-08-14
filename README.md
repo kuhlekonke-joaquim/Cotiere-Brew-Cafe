@@ -8,7 +8,7 @@ Côtière Brew Café Website
 
 Student Name: Kuhlekonke Joaquim  
 Student Number: ST10534065  
-Institution: Rosebank College  
+Institution: Rosebank International University College NMB
 Course: Diploma in Software Development  
 
 ## Project Overview
@@ -423,4 +423,4 @@ The research material contains the supporting information and sources used to de
 Kuhlekonke Joaquim  
 Student Number: ST10534065  
 Diploma in Software Development  
-Rosebank College
+Rosebank International University College NMB
