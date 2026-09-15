@@ -2,96 +2,272 @@
 <html lang="en">
 
 <head>
-     <meta charset="UTF-8">
-     <meta name="viewport" content="width, initial-scale=1.0">
-     <title>Côtière Brew Café</title>
+
+    <!-- Sets the character encoding -->
+    <meta charset="UTF-8">
+
+    <!-- Makes the website responsive on different screen sizes -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Website title -->
+    <title>Côtière Brew Café</title>
+
+    <!-- Connects the Home page to the external CSS stylesheet -->
+    <link rel="stylesheet" href="assets/css/styles.css">
+
 </head>
 
 <body>
 
-     <header>
+    <!-- ==================== HEADER ==================== -->
+    <!-- Contains the café name and navigation menu -->
+    <header>
+
         <h1>Côtière Brew Café</h1>
 
+        <!-- Main navigation -->
         <nav>
-            <a href="../Cotiere-Brew-Cafe/index.html">Home</a>
+
+            <a href="index.html">Home</a>
+
             <a href="pages/about.html">About Us</a>
+
             <a href="pages/menu.html">Menu</a>
+
             <a href="pages/gallery.html">Gallery</a>
+
             <a href="pages/contact.html">Contact</a>
+
             <a href="pages/enquiry.html">Enquiry</a>
+
         </nav>
+
     </header>
 
-     <main>
-      
-        <section>
-            <h2>Welcome to Côtière Brew Café</h2>
 
-            <p>
-                Fresh coffee, delicious food, and a warm place to relax.
-            </p>
-            <a href="pages/menu.html">View Our Menu</a>
-        </section>
+    <!-- ==================== MAIN CONTENT ==================== -->
 
-            <h2>What We Offer</h2>
+    <main>
 
-            <h3>Freshly Brewed Coffee</h3>
-            <p>Enjoy freshly brewed coffee made for every coffee lover.</p>
+        <!-- ==================== WELCOME SECTION ==================== -->
+        <!-- Main welcome section for the café -->
+        <section class="hero">
 
-            <h3>Delicious Food</h3>
-            <p>Indulge in our delicious selection of fresh meals and homemade pastries.</p>
+            <div class="hero-content">
 
-            <h3>Cozy Atmosphere</h3>
-            <p>A comfortable space to study, meet friends, or simply relax.</p>
-        </section>
-
-        <section>
-
-       <h2>Featured Items</h2>
-
-       <h3>Cappuccino</h3>
-         <p>Our signature cappuccino made with freshly ground coffee beans and steamed milk.</p>
-
-         <h3>Chocolate Croissant</h3>
-         <p>A delightful pastry filled with rich chocolate and topped with a dusting of powdered sugar.</p>
-
-         <h3>Grilled Garlic Baguette with Greek Salad</h3>
-         <p>A delicious combination of a grilled garlic baguette and a refreshing Greek salad.</p>
-
-         <h3>Matcha Latte</h3>
-         <p>A creamy and earthy latte made with high-quality matcha powder and steamed milk.</p>
-         
-         </section>
-
-         <section>
-
-            <h2>About Côtière Brew Café</h2>
+                <h2>Welcome to Côtière Brew Café</h2>
 
                 <p>
-                    Côtière Brew Café is a welcoming café where customers can enjoy fresh coffee, tasty food, and a comfortable place to relax.
+                    Fresh coffee, delicious food, and a warm place to relax.
+                </p>
+
+                <!-- Link to the café menu -->
+                <a href="pages/menu.html" class="btn">
+                    View Our Menu
+                </a>
+
+            </div>
+
+        </section>
+
+
+        <!-- ==================== WHAT WE OFFER ==================== -->
+        <!-- Shows the main services and features of the café -->
+        <section class="container">
+
+            <div class="section-heading">
+
+                <h2>What We Offer</h2>
+
+                <p>
+                    Fresh coffee, delicious food, and a comfortable
+                    atmosphere for everyone.
+                </p>
+
+            </div>
+
+
+            <!-- Feature cards -->
+            <div class="card-grid">
+
+                <!-- Fresh coffee -->
+                <article class="card">
+
+                    <h3>Freshly Brewed Coffee</h3>
+
+                    <p>
+                        Enjoy freshly brewed coffee made for every coffee lover.
+                    </p>
+
+                </article>
+
+
+                <!-- Food -->
+                <article class="card">
+
+                    <h3>Delicious Food</h3>
+
+                    <p>
+                        Indulge in our delicious selection of fresh meals
+                        and homemade pastries.
+                    </p>
+
+                </article>
+
+
+                <!-- Atmosphere -->
+                <article class="card">
+
+                    <h3>Cozy Atmosphere</h3>
+
+                    <p>
+                        A comfortable space to study, meet friends,
+                        or simply relax.
+                    </p>
+
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- ==================== FEATURED ITEMS ==================== -->
+        <!-- Displays some of the café's featured items -->
+        <section class="container">
+
+            <div class="section-heading">
+
+                <h2>Featured Items</h2>
+
+                <p>
+                    Enjoy some of our popular food and drinks.
+                </p>
+
+            </div>
+
+
+            <!-- Featured item cards -->
+            <div class="card-grid">
+
+                <!-- Cappuccino -->
+                <article class="card">
+
+                    <h3>Cappuccino</h3>
+
+                    <p>
+                        Our signature cappuccino made with freshly ground
+                        coffee beans and steamed milk.
+                    </p>
+
+                </article>
+
+
+                <!-- Chocolate Croissant -->
+                <article class="card">
+
+                    <h3>Chocolate Croissant</h3>
+
+                    <p>
+                        A delightful pastry filled with rich chocolate
+                        and topped with a dusting of powdered sugar.
+                    </p>
+
+                </article>
+
+
+                <!-- Grilled Garlic Baguette -->
+                <article class="card">
+
+                    <h3>Grilled Garlic Baguette with Greek Salad</h3>
+
+                    <p>
+                        A delicious combination of a grilled garlic baguette
+                        and a refreshing Greek salad.
+                    </p>
+
+                </article>
+
+
+                <!-- Matcha Latte -->
+                <article class="card">
+
+                    <h3>Matcha Latte</h3>
+
+                    <p>
+                        A creamy and earthy latte made with high-quality
+                        matcha powder and steamed milk.
+                    </p>
+
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- ==================== ABOUT SECTION ==================== -->
+        <!-- Gives visitors a short introduction to the café -->
+        <section class="container">
+
+            <div class="intro">
+
+                <h2>About Côtière Brew Café</h2>
+
+                <p>
+                    Côtière Brew Café is a welcoming café where customers
+                    can enjoy fresh coffee, tasty food, and a comfortable
+                    place to relax.
                 </p>
 
                 <p>
-                    Whether you are studying, meeting friends, or enjoyinh a quiet coffee, Côtière Brew Café is a place for everyone.
+                    Whether you are studying, meeting friends, or enjoying
+                    a quiet coffee, Côtière Brew Café is a place for everyone.
                 </p>
 
-                <a href="pages/about.html">Learn More About Us</a>
-            </section>
+                <!-- Link to the full About Us page -->
+                <a href="pages/about.html" class="btn">
+                    Learn More About Us
+                </a>
 
-            <section>
+            </div>
+
+        </section>
+
+
+        <!-- ==================== VISIT SECTION ==================== -->
+        <!-- Encourages customers to contact the café -->
+        <section class="container">
+
+            <div class="info-box">
 
                 <h2>Visit Côtière Brew Café</h2>
-              
+
                 <p>
-                    Come enjoy great coffee, fresh food, and a relaxing café experience.
+                    Come enjoy great coffee, fresh food, and a relaxing
+                    café experience.
                 </p>
-  
-                <a href="pages/contact.html">Contact Us</a>
-            </section>
+
+                <!-- Link to the Contact page -->
+                <a href="pages/contact.html" class="btn">
+                    Contact Us
+                </a>
+
+            </div>
+
+        </section>
+
     </main>
- 
+
+
+    <!-- ==================== FOOTER ==================== -->
+    <!-- Displays copyright information -->
     <footer>
-        <p>&copy; 2023 Côtière Brew Café. All rights reserved.</p>
+
+        <p>
+            &copy; 2026 Côtière Brew Café. All rights reserved.
+        </p>
+
     </footer>
 
 </body>
