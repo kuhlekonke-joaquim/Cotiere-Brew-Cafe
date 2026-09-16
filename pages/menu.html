@@ -4,84 +4,343 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Menu - Côtière Brew Café</title>
+
+    <title>Menu | Côtière Brew Café</title>
+
+    <!-- Link to the main external stylesheet -->
+    <link rel="stylesheet" href="../assets/css/styles.css">
+    
 </head>
 
 <body>
 
-    <!-- Header and navigation -->
+    <!-- ==================== HEADER ==================== -->
     <header>
 
-        <h1>Côtière Brew Café</h1>
+        <!-- Café name and tagline -->
+        <div class="container">
+            <h1>Côtière Brew Café</h1>
+            <p>Fresh Coffee • Fresh Moments</p>
+        </div>
 
+        <!-- Main navigation -->
         <nav>
-            <a href="../index.html">Home</a>
-            <a href="about.html">About Us</a>
-            <a href="menu.html">Menu</a>
-            <a href="gallery.html">Gallery</a>
-            <a href="contact.html">Contact</a>
-            <a href="enquiry.html">Enquiry</a>
+            <div class="container">
+
+                <a href="../index.html">Home</a>
+                <a href="about.html">About Us</a>
+                <a href="menu.html">Menu</a>
+                <a href="gallery.html">Gallery</a>
+                <a href="contact.html">Contact</a>
+                <a href="enquiry.html">Enquiry</a>
+
+            </div>
         </nav>
 
     </header>
 
+
+    <!-- ==================== MAIN CONTENT ==================== -->
     <main>
 
-        <!-- Menu Introduction -->
-        <section>
-            <h1>Our Menu</h1>
+        <!-- Menu introduction -->
+        <section class="container intro">
 
-            <h2>Food and Pastries</h2>
+            <p class="small-heading">OUR MENU</p>
 
-            <p>Chocolate Croissant - R34.99</p>
+            <h2 class="section-heading">Freshly Made, Just for You</h2>
 
-            <p>Butter Croissant - R29.99</p>
-
-            <p>Blueberry Muffin - R24.99</p>
-
-            <p>Chocolate Chip Muffin - R24.99</p>
-
-            <p>Grilled Garlic Baguette with Greek Salad - R34.99</p>
-
-            <p>Toasted Chicken Sandwich - R39.99</p>
-
-            <p>Breakfast Toast with chips - R49.99</p>
-
-            <p>Carrot Cake Slice - R44.99</p>
-
-            <p>Chocolate Cake Slice - R44.99</p>
-
-            <p>French Toast - R39.99</p>
-
-            <p>Crepes - R34.99
-                Choose from Nutella, Strawberry, or Banana
+            <p>
+                Explore our selection of freshly prepared food, pastries and
+                refreshing drinks. Whether you are looking for breakfast,
+                something sweet or a refreshing drink, Côtière Brew Café has
+                something for everyone.
             </p>
+
         </section>
 
-        <section>
 
-            <h2>Cold Drinks</h2>
+        <!-- ==================== FOOD & PASTRIES ==================== -->
+        <section class="container menu-section">
 
-            <p>Freshly Squeezed Orange Juice - R29.99</p>
+            <p class="small-heading">FOOD & PASTRIES</p>
 
-            <p>Freshly Squeezed Apple Juice - R29.99</p>
+            <h2 class="section-heading">Fresh From the Kitchen</h2>
 
-            <p>Matcha Latte - R34.99</p>
+            <div class="menu-list">
 
-            <p>Iced Coffee - R29.99</p>
+                <!-- Chocolate Croissant -->
+                <article class="menu-item">
 
-            <p>Iced Tea - R24.99</p>
+                    <div>
+                        <h3>Chocolate Croissant</h3>
+                        <p>Freshly baked croissant filled with chocolate.</p>
+                    </div>
 
-            <p>Milkshake - R34.99
-                Choose from Chocolate, Strawberry, Vanilla, Lime, or Bubblegum
-            </p>
+                    <span>R34.99</span>
+
+                </article>
+
+
+                <!-- Butter Croissant -->
+                <article class="menu-item">
+
+                    <div>
+                        <h3>Butter Croissant</h3>
+                        <p>Classic French-style croissant with a buttery flavour.</p>
+                    </div>
+
+                    <span>R29.99</span>
+
+                </article>
+
+
+                <!-- Blueberry Muffin -->
+                <article class="menu-item">
+
+                    <div>
+                        <h3>Blueberry Muffin</h3>
+                        <p>Soft muffin filled with blueberries.</p>
+                    </div>
+
+                    <span>R24.99</span>
+
+                </article>
+
+
+                <!-- Chocolate Chip Muffin -->
+                <article class="menu-item">
+
+                    <div>
+                        <h3>Chocolate Chip Muffin</h3>
+                        <p>Fresh muffin with delicious chocolate chips.</p>
+                    </div>
+
+                    <span>R24.99</span>
+
+                </article>
+
+
+                <!-- Garlic Baguette -->
+                <article class="menu-item">
+
+                    <div>
+                        <h3>Grilled Garlic Baguette with Greek Salad</h3>
+                        <p>Grilled garlic baguette served with a fresh Greek salad.</p>
+                    </div>
+
+                    <span>R34.99</span>
+
+                </article>
+
+
+                <!-- Chicken Sandwich -->
+                <article class="menu-item">
+
+                    <div>
+                        <h3>Toasted Chicken Sandwich</h3>
+                        <p>Toasted sandwich filled with a delicious chicken filling.</p>
+                    </div>
+
+                    <span>R39.99</span>
+
+                </article>
+
+
+                <!-- Breakfast Toast -->
+                <article class="menu-item">
+
+                    <div>
+                        <h3>Breakfast Toast with Chips</h3>
+                        <p>Breakfast toast served with crispy chips.</p>
+                    </div>
+
+                    <span>R49.99</span>
+
+                </article>
+
+
+                <!-- Carrot Cake -->
+                <article class="menu-item">
+
+                    <div>
+                        <h3>Carrot Cake Slice</h3>
+                        <p>A delicious slice of freshly prepared carrot cake.</p>
+                    </div>
+
+                    <span>R44.99</span>
+
+                </article>
+
+
+                <!-- Chocolate Cake -->
+                <article class="menu-item">
+
+                    <div>
+                        <h3>Chocolate Cake Slice</h3>
+                        <p>A rich and delicious slice of chocolate cake.</p>
+                    </div>
+
+                    <span>R44.99</span>
+
+                </article>
+
+
+                <!-- French Toast -->
+                <article class="menu-item">
+
+                    <div>
+                        <h3>French Toast</h3>
+                        <p>Classic French toast prepared for a satisfying breakfast.</p>
+                    </div>
+
+                    <span>R39.99</span>
+
+                </article>
+
+
+                <!-- Crepes -->
+                <article class="menu-item">
+
+                    <div>
+                        <h3>Crepes</h3>
+                        <p>Choose from Nutella, strawberry or banana.</p>
+                    </div>
+
+                    <span>R34.99</span>
+
+                </article>
+
+            </div>
+
         </section>
+
+
+        <!-- ==================== COLD DRINKS ==================== -->
+        <section class="container menu-section">
+
+            <p class="small-heading">COLD DRINKS</p>
+
+            <h2 class="section-heading">Something Refreshing</h2>
+
+            <div class="menu-list">
+
+                <!-- Orange Juice -->
+                <article class="menu-item">
+
+                    <div>
+                        <h3>Orange Juice</h3>
+                        <p>Refreshing orange juice.</p>
+                    </div>
+
+                    <span>R29.99</span>
+
+                </article>
+
+
+                <!-- Apple Juice -->
+                <article class="menu-item">
+
+                    <div>
+                        <h3>Apple Juice</h3>
+                        <p>Refreshing apple juice.</p>
+                    </div>
+
+                    <span>R29.99</span>
+
+                </article>
+
+
+                <!-- Matcha Latte -->
+                <article class="menu-item">
+
+                    <div>
+                        <h3>Matcha Latte</h3>
+                        <p>A smooth and refreshing matcha-based drink.</p>
+                    </div>
+
+                    <span>R34.99</span>
+
+                </article>
+
+
+                <!-- Iced Coffee -->
+                <article class="menu-item">
+
+                    <div>
+                        <h3>Iced Coffee</h3>
+                        <p>Chilled coffee served over ice.</p>
+                    </div>
+
+                    <span>R29.99</span>
+
+                </article>
+
+
+                <!-- Iced Tea -->
+                <article class="menu-item">
+
+                    <div>
+                        <h3>Iced Tea</h3>
+                        <p>A refreshing chilled tea.</p>
+                    </div>
+
+                    <span>R24.99</span>
+
+                </article>
+
+
+                <!-- Milkshake -->
+                <article class="menu-item">
+
+                    <div>
+                        <h3>Milkshake</h3>
+                        <p>
+                            Available in chocolate, strawberry, vanilla,
+                            lime or bubblegum.
+                        </p>
+                    </div>
+
+                    <span>R34.99</span>
+
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- ==================== MENU CTA ==================== -->
+        <section class="about-everyone">
+
+            <div class="container">
+
+                <p class="small-heading">VISIT US</p>
+
+                <h2>Come Enjoy a Fresh Moment</h2>
+
+                <p>
+                    Have a question about our menu or want to know more about
+                    Côtière Brew Café? Get in touch with us.
+                </p>
+
+                <a href="contact.html" class="btn">Contact Us</a>
+
+            </div>
+
+        </section>
+
     </main>
 
-    
+
+    <!-- ==================== FOOTER ==================== -->
     <footer>
 
-        <p>&copy; 2026 Côtière Brew Café. All rights reserved.</p>
+        <div class="container">
+
+            <p>&copy; 2026 Côtière Brew Café. All rights reserved.</p>
+
+        </div>
 
     </footer>
 
