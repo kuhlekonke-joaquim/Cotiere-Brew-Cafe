@@ -4,91 +4,245 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Enquiry - Côtière Brew Café</title>
 
-    <!-- the external CSS stylesheet link -->
+    <title>Enquiry | Côtière Brew Café</title>
+
+    <!-- External CSS stylesheet -->
     <link rel="stylesheet" href="../assets/css/styles.css">
     
 </head>
 
 <body>
 
-    <!-- Header and navigation -->
+    <!-- ==================== HEADER ==================== -->
     <header>
 
-        <h1>Côtière Brew Café</h1>
+        <!-- Café name and tagline -->
+        <div class="container">
+            <h1>Côtière Brew Café</h1>
+            <p>Fresh Coffee • Fresh Moments</p>
+        </div>
 
-        <!-- Main navigation links -->
+        <!-- Main navigation -->
         <nav>
-            <a href="../index.html">Home</a>
-            <a href="about.html">About Us</a>
-            <a href="menu.html">Menu</a>
-            <a href="gallery.html">Gallery</a>
-            <a href="contact.html">Contact</a>
-            <a href="enquiry.html">Enquiry</a>
+            <div class="container">
+
+                <a href="../index.html">Home</a>
+                <a href="about.html">About Us</a>
+                <a href="menu.html">Menu</a>
+                <a href="gallery.html">Gallery</a>
+                <a href="contact.html">Contact</a>
+                <a href="enquiry.html">Enquiry</a>
+
+            </div>
         </nav>
 
     </header>
 
-    <!-- Main enquiry content -->
+
+    <!-- ==================== MAIN CONTENT ==================== -->
     <main>
 
-        <!-- Enquiry form section -->
-        <section>
+        <!-- Enquiry introduction -->
+        <section class="container intro">
 
-            <h2>Enquiry Form</h2>
+            <p class="small-heading">GET IN TOUCH</p>
 
-            <!-- Introduction to the enquiry form -->
-            <p>
-                Have a question about our café, menu, or services?
-            </p>
+            <h2 class="section-heading">Make an Enquiry</h2>
 
             <p>
-                Please fill out the form below and we'll get back to you as soon as possible.
+                Have a question about our menu, reservations or café?
+                Complete the form below and send us your enquiry.
             </p>
 
-            <!-- Enquiry Form -->
-            <form action="submit_enquiry.php" method="post">
+        </section>
 
-                <!-- Name and Surname field -->
-                <label for="name">Name and Surname:</label>
-                <input type="text" id="name" name="name" required>
 
-                <!-- Email field -->
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
+        <!-- ==================== ENQUIRY FORM ==================== -->
+        <section class="enquiry-section">
 
-                <!-- Enquiry Type selection -->
-                <label for="enquiry_type">Enquiry Type:</label>
-                <select id="enquiry_type" name="enquiry_type" required>
-                    <option value="">Select an option</option>
-                    <option value="general">General Enquiry</option>
-                    <option value="menu">Menu Enquiry</option>
-                    <option value="reservation">Reservation Enquiry</option>
-                    <option value="feedback">Feedback</option>
-                </select>
+            <div class="container">
 
-                <!-- Message field -->
-                <label for="message">Message:</label>
-                <textarea id="message" name="message" rows="6" cols="40" required></textarea>
+                <div class="enquiry-container">
 
-                <!-- Submit button -->
-                <input type="submit" value="Submit Enquiry">
+                    <div class="enquiry-intro">
 
-            </form>
+                        <p class="small-heading">WE'D LOVE TO HEAR FROM YOU</p>
 
-            <!-- Response information -->
-            <p>
-                We will respond to your enquiry as soon as possible.
-            </p>
+                        <h2>How Can We Help?</h2>
+
+                        <p>
+                            Whether you have a question about our menu,
+                            would like to make a reservation or simply want
+                            to share your feedback, send us a message and
+                            we'll get back to you.
+                        </p>
+
+                    </div>
+
+
+                    <!-- Enquiry form -->
+                    <form action="submit_enquiry.php" method="post">
+
+                        <!-- Name and surname -->
+                        <div class="form-group">
+
+                            <label for="name">
+                                Name and Surname
+                            </label>
+
+                            <input
+                                type="text"
+                                id="name"
+                                name="name"
+                                placeholder="Enter your name and surname"
+                                required
+                            >
+
+                        </div>
+
+
+                        <!-- Email address -->
+                        <div class="form-group">
+
+                            <label for="email">
+                                Email Address
+                            </label>
+
+                            <input
+                                type="email"
+                                id="email"
+                                name="email"
+                                placeholder="Enter your email address"
+                                required
+                            >
+
+                        </div>
+
+
+                        <!-- Enquiry type -->
+                        <div class="form-group">
+
+                            <label for="enquiry-type">
+                                Enquiry Type
+                            </label>
+
+                            <select
+                                id="enquiry-type"
+                                name="enquiry_type"
+                                required
+                            >
+
+                                <option value="" disabled selected>
+                                    Select an enquiry type
+                                </option>
+
+                                <option value="general">
+                                    General Enquiry
+                                </option>
+
+                                <option value="menu">
+                                    Menu
+                                </option>
+
+                                <option value="reservation">
+                                    Reservation
+                                </option>
+
+                                <option value="feedback">
+                                    Feedback
+                                </option>
+
+                            </select>
+
+                        </div>
+
+
+                        <!-- Message -->
+                        <div class="form-group">
+
+                            <label for="message">
+                                Message
+                            </label>
+
+                            <textarea
+                                id="message"
+                                name="message"
+                                rows="7"
+                                placeholder="Type your enquiry here..."
+                                required
+                            ></textarea>
+
+                        </div>
+
+
+                        <!-- Submit button -->
+                        <div class="form-submit">
+
+                            <input
+                                type="submit"
+                                value="Send Enquiry"
+                            >
+
+                        </div>
+
+                    </form>
+
+
+                    <!-- Response information -->
+                    <div class="enquiry-note">
+
+                        <p>
+                            We aim to respond to enquiries as soon as
+                            possible. Thank you for contacting
+                            Côtière Brew Café.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ==================== CONTACT CTA ==================== -->
+        <section class="about-everyone">
+
+            <div class="container">
+
+                <p class="small-heading">NEED MORE INFORMATION?</p>
+
+                <h2>Visit or Contact Us</h2>
+
+                <p>
+                    Find our café locations, opening hours and contact
+                    information on our contact page.
+                </p>
+
+                <a href="contact.html" class="btn">
+                    Contact Us
+                </a>
+
+            </div>
 
         </section>
 
     </main>
 
-    <!-- Footer -->
+
+    <!-- ==================== FOOTER ==================== -->
     <footer>
-        <p>&copy; 2026 Côtière Brew Café. All rights reserved.</p>
+
+        <div class="container">
+
+            <p>
+                &copy; 2026 Côtière Brew Café. All rights reserved.
+            </p>
+
+        </div>
+
     </footer>
 
 </body>

@@ -1002,3 +1002,537 @@ footer p {
     }
 
 }
+
+/* =========================================================
+   GALLERY PAGE
+   Clean café gallery layout
+   ========================================================= */
+
+
+/* ==================== GALLERY SECTION ==================== */
+
+.gallery-section {
+    padding-top: 45px;
+    padding-bottom: 45px;
+}
+
+
+/* ==================== GALLERY GRID ==================== */
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 35px;
+    margin-top: 30px;
+}
+
+
+/* ==================== GALLERY ITEMS ==================== */
+
+.gallery-item {
+    background-color: transparent;
+    overflow: hidden;
+}
+
+
+/* ==================== GALLERY IMAGES ==================== */
+
+.gallery-item img {
+    display: block;
+    width: 100%;
+    height: 320px;
+    object-fit: cover;
+    border-radius: 18px;
+    box-shadow: 0 10px 25px var(--shadow);
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+
+/* Image hover effect */
+
+.gallery-item img:hover {
+    transform: scale(1.02);
+    box-shadow: 0 15px 30px var(--shadow);
+}
+
+
+/* ==================== GALLERY CAPTIONS ==================== */
+
+.gallery-caption {
+    padding: 18px 5px 5px;
+}
+
+
+.gallery-caption h3 {
+    margin-bottom: 5px;
+    color: var(--espresso);
+    font-size: 1.3rem;
+}
+
+
+.gallery-caption p {
+    margin-bottom: 0;
+    color: var(--soft-brown);
+}
+
+
+/* ==================== FEATURED GALLERY ==================== */
+
+/* Gives the food photographs a slightly different
+   height from the café photographs. */
+
+.featured-gallery .gallery-item img {
+    height: 280px;
+}
+
+
+/* ==================== GALLERY HOVER ==================== */
+
+.gallery-item {
+    transition: transform 0.3s ease;
+}
+
+.gallery-item:hover {
+    transform: translateY(-4px);
+}
+
+
+/* ==================== TABLET ==================== */
+
+@media (max-width: 900px) {
+
+    .gallery-grid {
+        gap: 25px;
+    }
+
+    .gallery-item img {
+        height: 280px;
+    }
+
+    .featured-gallery .gallery-item img {
+        height: 250px;
+    }
+
+}
+
+
+/* ==================== MOBILE ==================== */
+
+@media (max-width: 600px) {
+
+    .gallery-section {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+
+    /* One image per row on phones */
+    .gallery-grid {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .gallery-item img,
+    .featured-gallery .gallery-item img {
+        height: 260px;
+    }
+
+    .gallery-caption {
+        padding-top: 12px;
+    }
+
+    .gallery-caption h3 {
+        font-size: 1.15rem;
+    }
+
+}
+
+/* =========================================================
+   ENQUIRY PAGE STYLING
+   Clean and welcoming café enquiry form
+   ========================================================= */
+
+
+/* ==================== ENQUIRY SECTION ==================== */
+
+.enquiry-section {
+    padding: 20px 0 80px;
+    background-color: var(--cream);
+}
+
+
+/* Main enquiry container */
+
+.enquiry-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 50px;
+    background-color: var(--cream-light);
+    box-shadow: 0 10px 30px var(--shadow);
+}
+
+
+/* ==================== ENQUIRY INTRO ==================== */
+
+.enquiry-intro {
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.enquiry-intro h2 {
+    margin-bottom: 15px;
+    color: var(--espresso);
+    font-size: 2.3rem;
+}
+
+.enquiry-intro p:not(.small-heading) {
+    max-width: 650px;
+    margin: 0 auto;
+    line-height: 1.8;
+    color: var(--soft-brown);
+}
+
+
+/* ==================== FORM ==================== */
+
+.enquiry-container form {
+    width: 100%;
+}
+
+
+/* Form labels */
+
+.enquiry-container label {
+    display: block;
+    margin-bottom: 8px;
+    color: var(--espresso);
+    font-weight: bold;
+}
+
+
+/* Form inputs */
+
+.enquiry-container input[type="text"],
+.enquiry-container input[type="email"],
+.enquiry-container select,
+.enquiry-container textarea {
+    width: 100%;
+    padding: 14px 16px;
+    border: 1px solid var(--butter);
+    border-radius: 3px;
+    background-color: var(--white);
+    color: var(--espresso);
+    font-family: inherit;
+    font-size: 1rem;
+    box-sizing: border-box;
+}
+
+
+/* Textarea */
+
+.enquiry-container textarea {
+    min-height: 160px;
+    resize: vertical;
+}
+
+
+/* Placeholder text */
+
+.enquiry-container input::placeholder,
+.enquiry-container textarea::placeholder {
+    color: var(--soft-brown);
+}
+
+
+/* ==================== FORM FOCUS ==================== */
+
+.enquiry-container input:focus,
+.enquiry-container select:focus,
+.enquiry-container textarea:focus {
+    outline: none;
+    border-color: var(--terracotta);
+    box-shadow: 0 0 0 2px rgba(185, 111, 74, 0.15);
+}
+
+
+/* ==================== SUBMIT BUTTON ==================== */
+
+.form-submit {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.form-submit input[type="submit"] {
+    padding: 13px 32px;
+    border: none;
+    border-radius: 3px;
+    background-color: var(--coffee);
+    color: var(--white);
+    font-family: inherit;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.form-submit input[type="submit"]:hover {
+    background-color: var(--espresso);
+    transform: translateY(-2px);
+}
+
+
+/* ==================== ENQUIRY NOTE ==================== */
+
+.enquiry-note {
+    margin-top: 35px;
+    padding-top: 25px;
+    border-top: 1px solid var(--butter);
+    text-align: center;
+}
+
+.enquiry-note p {
+    margin: 0;
+    color: var(--soft-brown);
+    font-size: 0.95rem;
+    line-height: 1.7;
+}
+
+
+/* ==================== MOBILE ==================== */
+
+@media (max-width: 600px) {
+
+    .enquiry-section {
+        padding-bottom: 55px;
+    }
+
+    .enquiry-container {
+        padding: 30px 20px;
+    }
+
+    .enquiry-intro h2 {
+        font-size: 2rem;
+    }
+
+    .form-submit input[type="submit"] {
+        width: 100%;
+    }
+
+}
+
+/* =========================================================
+   CONTACT PAGE STYLING
+   Clean café contact and location layout
+   ========================================================= */
+
+
+/* ==================== CONTACT INFORMATION ==================== */
+
+.contact-section {
+    padding: 20px 0 60px;
+    background-color: var(--cream);
+}
+
+.contact-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    max-width: 950px;
+    margin: 0 auto;
+}
+
+
+/* Contact information cards */
+
+.contact-card {
+    padding: 35px;
+    background-color: var(--cream-light);
+    border-top: 3px solid var(--butter);
+    box-shadow: 0 8px 20px var(--shadow);
+}
+
+.contact-card h3 {
+    margin-bottom: 20px;
+    color: var(--espresso);
+    font-size: 1.5rem;
+}
+
+.contact-card p {
+    margin-bottom: 18px;
+    color: var(--soft-brown);
+    line-height: 1.7;
+}
+
+.contact-card strong {
+    color: var(--coffee);
+}
+
+
+/* ==================== LOCATIONS ==================== */
+
+.locations-section {
+    padding-top: 70px;
+    padding-bottom: 70px;
+    text-align: center;
+}
+
+.location-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    max-width: 950px;
+    margin: 40px auto;
+}
+
+
+/* Individual location */
+
+.location-item {
+    padding: 35px;
+    border: 1px solid var(--butter);
+    background-color: var(--cream-light);
+    text-align: left;
+}
+
+.location-item h3 {
+    margin-bottom: 20px;
+    color: var(--espresso);
+    font-size: 1.5rem;
+}
+
+.location-item p {
+    margin-bottom: 15px;
+    color: var(--soft-brown);
+    line-height: 1.7;
+}
+
+.location-item strong {
+    color: var(--coffee);
+}
+
+
+/* Google Maps button */
+
+.map-link {
+    margin-top: 20px;
+}
+
+
+/* ==================== CONTACT FORM ==================== */
+
+.contact-form-section {
+    padding: 80px 0;
+    background-color: var(--cream);
+}
+
+.contact-form-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 50px;
+    background-color: var(--cream-light);
+    box-shadow: 0 10px 30px var(--shadow);
+}
+
+.contact-form-container > h2 {
+    margin-bottom: 15px;
+    color: var(--espresso);
+    font-size: 2.3rem;
+}
+
+.contact-form-container > p:not(.small-heading) {
+    margin-bottom: 35px;
+    color: var(--soft-brown);
+    line-height: 1.7;
+}
+
+
+/* ==================== CONTACT FORM FIELDS ==================== */
+
+.contact-form-container form {
+    width: 100%;
+}
+
+.contact-form-container label {
+    display: block;
+    margin-bottom: 8px;
+    color: var(--espresso);
+    font-weight: bold;
+}
+
+.contact-form-container input[type="text"],
+.contact-form-container input[type="email"],
+.contact-form-container textarea {
+    width: 100%;
+    padding: 14px 16px;
+    border: 1px solid var(--butter);
+    border-radius: 3px;
+    background-color: var(--white);
+    color: var(--espresso);
+    font-family: inherit;
+    font-size: 1rem;
+    box-sizing: border-box;
+}
+
+.contact-form-container textarea {
+    min-height: 160px;
+    resize: vertical;
+}
+
+
+/* Placeholder text */
+
+.contact-form-container input::placeholder,
+.contact-form-container textarea::placeholder {
+    color: var(--soft-brown);
+}
+
+
+/* ==================== FORM FOCUS ==================== */
+
+.contact-form-container input:focus,
+.contact-form-container textarea:focus {
+    outline: none;
+    border-color: var(--terracotta);
+    box-shadow: 0 0 0 2px rgba(185, 111, 74, 0.15);
+}
+
+
+/* ==================== MOBILE CONTACT PAGE ==================== */
+
+@media (max-width: 900px) {
+
+    .contact-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .location-list {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+
+@media (max-width: 600px) {
+
+    .contact-card,
+    .location-item {
+        padding: 25px;
+    }
+
+    .locations-section {
+        padding-top: 55px;
+        padding-bottom: 55px;
+    }
+
+    .contact-form-section {
+        padding: 55px 0;
+    }
+
+    .contact-form-container {
+        padding: 30px 20px;
+    }
+
+    .contact-form-container > h2 {
+        font-size: 2rem;
+    }
+
+}

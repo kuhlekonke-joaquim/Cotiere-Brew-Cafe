@@ -4,123 +4,211 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gallery - Côtière Brew Café</title>
 
-    <!-- the external CSS stylesheet link  -->
+    <title>Gallery | Côtière Brew Café</title>
+
+    <!-- External CSS stylesheet -->
     <link rel="stylesheet" href="../assets/css/styles.css">
     
 </head>
 
 <body>
 
-    <!-- Header and navigation -->
+    <!-- ==================== HEADER ==================== -->
     <header>
 
-        <!-- Main navigation links -->
+        <div class="container">
+            <h1>Côtière Brew Café</h1>
+            <p>Fresh Coffee • Fresh Moments</p>
+        </div>
+
+        <!-- Main navigation -->
         <nav>
-            <a href="../index.html">Home</a>
-            <a href="about.html">About Us</a>
-            <a href="menu.html">Menu</a>
-            <a href="gallery.html">Gallery</a>
-            <a href="contact.html">Contact</a>
-            <a href="enquiry.html">Enquiry</a>
+            <div class="container">
+
+                <a href="../index.html">Home</a>
+                <a href="about.html">About Us</a>
+                <a href="menu.html">Menu</a>
+                <a href="gallery.html">Gallery</a>
+                <a href="contact.html">Contact</a>
+                <a href="enquiry.html">Enquiry</a>
+
+            </div>
         </nav>
 
     </header>
 
-    <!-- Main gallery content -->
+
+    <!-- ==================== MAIN CONTENT ==================== -->
     <main>
 
-        <!-- Gallery introduction and café images -->
-        <section>
+        <!-- Gallery introduction -->
+        <section class="container intro">
 
-            <h2>Our Gallery</h2>
+            <p class="small-heading">OUR GALLERY</p>
+
+            <h2 class="section-heading">
+                A Look Inside Côtière Brew Café
+            </h2>
 
             <p>
-                Take a look at our gallery at Côtière Brew Café, where you can see our delicious food, drinks, and welcoming atmosphere.
+                Take a look at our café, our food and some of the drinks
+                available at Côtière Brew Café.
             </p>
-
-            <p>
-                Our gallery showcases our freshly brewed coffee, tasty pastries, and cozy atmosphere. We hope you enjoy browsing through our photos and get a glimpse of what makes Côtière Brew Café a special place to visit.
-            </p>
-
-            <!-- Café exterior and interior images -->
-            <h2>Our Café</h2>
-
-            <table>
-                <tr>
-
-                    <!-- Café exterior -->
-                    <td>
-                        <h3>Exterior</h3>
-                        <img src="../assets/images/CafeExterior.jpg"
-                             alt="Côtière Brew Café Exterior"
-                             width="300">
-                    </td>
-
-                    <!-- Café interior -->
-                    <td>
-                        <h3>Interior</h3>
-                        <img src="../assets/images/CafeInterior.jpg"
-                             alt="Côtière Brew Café Interior"
-                             width="300">
-                    </td>
-
-                </tr>
-            </table>
 
         </section>
 
-        <!-- Featured food and drink images -->
-        <section>
 
-            <h2>Featured Items</h2>
+        <!-- ==================== OUR CAFÉ ==================== -->
+        <section class="gallery-section">
 
-            <table>
-                <tr>
+            <div class="container">
 
-                    <!-- Cappuccino image -->
-                    <td>
-                        <h3>Cappuccino</h3>
+                <p class="small-heading">THE CAFÉ</p>
+
+                <h2 class="section-heading">Our Café</h2>
+
+                <div class="gallery-grid">
+
+                    <!-- Exterior -->
+                    <div class="gallery-item">
+
+                        <img src="../assets/images/CafeExterior.jpg"
+                             alt="Exterior of Côtière Brew Café">
+
+                        <div class="gallery-caption">
+                            <h3>Café Exterior</h3>
+                            <p>Welcome to Côtière Brew Café.</p>
+                        </div>
+
+                    </div>
+
+
+                    <!-- Interior -->
+                    <div class="gallery-item">
+
+                        <img src="../assets/images/CafeInterior.jpg"
+                             alt="Interior of Côtière Brew Café">
+
+                        <div class="gallery-caption">
+                            <h3>Café Interior</h3>
+                            <p>A comfortable space to enjoy fresh moments.</p>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ==================== FEATURED ITEMS ==================== -->
+        <section class="gallery-section">
+
+            <div class="container">
+
+                <p class="small-heading">FROM OUR MENU</p>
+
+                <h2 class="section-heading">Featured Items</h2>
+
+                <div class="gallery-grid featured-gallery">
+
+                    <!-- Cappuccino -->
+                    <div class="gallery-item">
+
                         <img src="../assets/images/Cappuccino.jpg"
-                             alt="Cappuccino"
-                             width="250">
-                    </td>
+                             alt="Cappuccino">
 
-                    <!-- Chocolate croissant image -->
-                    <td>
-                        <h3>Chocolate Croissant</h3>
+                        <div class="gallery-caption">
+                            <h3>Cappuccino</h3>
+                            <p>A smooth and comforting coffee favourite.</p>
+                        </div>
+
+                    </div>
+
+
+                    <!-- Chocolate Croissant -->
+                    <div class="gallery-item">
+
                         <img src="../assets/images/Chocolate Croissant.jpg"
-                             alt="Chocolate Croissant"
-                             width="300">
-                    </td>
+                             alt="Chocolate Croissant">
 
-                    <!-- Grilled garlic baguette and Greek salad image -->
-                    <td>
-                        <h3>Grilled Garlic Baguette with Greek Salad</h3>
+                        <div class="gallery-caption">
+                            <h3>Chocolate Croissant</h3>
+                            <p>A freshly baked chocolate-filled pastry.</p>
+                        </div>
+
+                    </div>
+
+
+                    <!-- Garlic Baguette -->
+                    <div class="gallery-item">
+
                         <img src="../assets/images/Grilled Garlic Baguettes with Greek Salad.jpg"
-                             alt="Grilled Garlic Baguette with Greek Salad"
-                             width="250">
-                    </td>
+                             alt="Grilled garlic baguette with Greek salad">
 
-                    <!-- Matcha latte image -->
-                    <td>
-                        <h3>Matcha Latte</h3>
+                        <div class="gallery-caption">
+                            <h3>Garlic Baguette & Greek Salad</h3>
+                            <p>A grilled baguette served with fresh salad.</p>
+                        </div>
+
+                    </div>
+
+
+                    <!-- Matcha Latte -->
+                    <div class="gallery-item">
+
                         <img src="../assets/images/Matcha Latte.jpg"
-                             alt="Matcha Latte"
-                             width="200">
-                    </td>
+                             alt="Matcha Latte">
 
-                </tr>
-            </table>
+                        <div class="gallery-caption">
+                            <h3>Matcha Latte</h3>
+                            <p>A refreshing matcha-based drink.</p>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ==================== GALLERY CTA ==================== -->
+        <section class="about-everyone">
+
+            <div class="container">
+
+                <p class="small-heading">FRESH MOMENTS</p>
+
+                <h2>Come Experience the Café</h2>
+
+                <p>
+                    Explore our menu and discover what Côtière Brew Café
+                    has to offer.
+                </p>
+
+                <a href="menu.html" class="btn">View Our Menu</a>
+
+            </div>
 
         </section>
 
     </main>
 
-    <!-- Footer -->
+
+    <!-- ==================== FOOTER ==================== -->
     <footer>
-        <p>&copy; 2026 Côtière Brew Café. All rights reserved.</p>
+
+        <div class="container">
+
+            <p>&copy; 2026 Côtière Brew Café. All rights reserved.</p>
+
+        </div>
+
     </footer>
 
 </body>

@@ -4,162 +4,319 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact - Côtière Brew Café</title>
 
-    <!-- the external CSS stylesheet link -->
+    <title>Contact | Côtière Brew Café</title>
+
+    <!-- External CSS stylesheet -->
     <link rel="stylesheet" href="../assets/css/styles.css">
     
 </head>
 
 <body>
 
-    <!-- Header and navigation -->
+    <!-- ==================== HEADER ==================== -->
     <header>
 
-        <h1>Côtière Brew Café</h1>
+        <!-- Café name and tagline -->
+        <div class="container">
+            <h1>Côtière Brew Café</h1>
+            <p>Fresh Coffee • Fresh Moments</p>
+        </div>
 
-        <!-- Main navigation links -->
+        <!-- Main navigation -->
         <nav>
-            <a href="../index.html">Home</a>
-            <a href="about.html">About Us</a>
-            <a href="menu.html">Menu</a>
-            <a href="gallery.html">Gallery</a>
-            <a href="enquiry.html">Enquiry</a>
-            <a href="contact.html">Contact</a>
+            <div class="container">
+
+                <a href="../index.html">Home</a>
+                <a href="about.html">About Us</a>
+                <a href="menu.html">Menu</a>
+                <a href="gallery.html">Gallery</a>
+                <a href="contact.html">Contact</a>
+                <a href="enquiry.html">Enquiry</a>
+
+            </div>
         </nav>
 
     </header>
 
-    <!-- Main contact page content -->
+
+    <!-- ==================== MAIN CONTENT ==================== -->
     <main>
 
-        <!-- Contact Introduction -->
-        <section>
+        <!-- Contact introduction -->
+        <section class="container intro">
 
-            <h2>Contact Us</h2>
+            <p class="small-heading">CONTACT US</p>
+
+            <h2 class="section-heading">We'd Love to Hear From You</h2>
 
             <p>
-                We would love to hear from you. Contact Côtière Brew Café
-                for enquiries, bookings, feedback or general information.
+                Whether you have a question, want to visit one of our cafés
+                or simply want to get in touch, you can find our contact
+                information below.
             </p>
 
         </section>
 
-        <!-- Contact Information -->
-        <section>
 
-            <h2>Get in Touch</h2>
+        <!-- ==================== CONTACT INFORMATION ==================== -->
+        <section class="contact-section">
 
-            <!-- Phone contact information -->
-            <p>
-                <strong>Phone:</strong> 041 555 0123
-            </p>
+            <div class="container">
 
-            <!-- Email contact information -->
-            <p>
-                <strong>Email:</strong> info@cotierebrewcafe.co.za
-            </p>
+                <div class="contact-grid">
 
-            <!-- Opening hours -->
-            <p>
-                <strong>Opening Hours:</strong> Monday - Saturday, 07:00 - 18:00
-            </p>
+                    <!-- General contact information -->
+                    <article class="contact-card">
 
-            <p>
-                <strong>Sunday:</strong> 08:00 - 15:00
-            </p>
+                        <p class="small-heading">GET IN TOUCH</p>
+
+                        <h3>Contact Information</h3>
+
+                        <p>
+                            <strong>Phone:</strong><br>
+                            041 555 0123
+                        </p>
+
+                        <p>
+                            <strong>Email:</strong><br>
+                            info@cotierebrewcafe.co.za
+                        </p>
+
+                    </article>
+
+
+                    <!-- Opening hours -->
+                    <article class="contact-card">
+
+                        <p class="small-heading">WHEN TO VISIT</p>
+
+                        <h3>Opening Hours</h3>
+
+                        <p>
+                            Monday - Sunday<br>
+                            07:00 - 18:00
+                        </p>
+
+                        <p>
+                            Visit us for fresh coffee, food and a relaxing
+                            café experience.
+                        </p>
+
+                    </article>
+
+                </div>
+
+            </div>
 
         </section>
 
-        <!-- Café locations -->
-        <section>
 
-            <h2>Our Locations</h2>
+        <!-- ==================== LOCATIONS ==================== -->
+        <section class="container locations-section">
 
-            <!-- Location table -->
-            <table>
+            <p class="small-heading">FIND US</p>
 
-                <!-- Table headings -->
-                <tr>
-                    <th>Location</th>
-                    <th>Address</th>
-                    <th>Opening Hours</th>
-                </tr>
+            <h2 class="section-heading">Our Locations</h2>
+
+            <div class="location-list">
 
                 <!-- Summerstrand location -->
-                <tr>
-                    <td>Summerstrand</td>
-                    <td>Marine Drive, Summerstrand, Gqeberha</td>
-                    <td>07:00 - 18:00</td>
-                </tr>
+                <article class="location-item">
+
+                    <h3>Summerstrand</h3>
+
+                    <p>
+                        <strong>Address:</strong><br>
+                        Marine Drive, Summerstrand, Gqeberha
+                    </p>
+
+                    <p>
+                        <strong>Opening Hours:</strong><br>
+                        07:00 - 18:00
+                    </p>
+
+                </article>
+
 
                 <!-- Walmer location -->
-                <tr>
-                    <td>Walmer</td>
-                    <td>6th Avenue, Walmer, Gqeberha</td>
-                    <td>07:00 - 18:00</td>
-                </tr>
+                <article class="location-item">
 
-            </table>
+                    <h3>Walmer</h3>
 
-        </section>
+                    <p>
+                        <strong>Address:</strong><br>
+                        6th Avenue, Walmer, Gqeberha
+                    </p>
 
-        <!-- Google Maps information -->
-        <section>
+                    <p>
+                        <strong>Opening Hours:</strong><br>
+                        07:00 - 18:00
+                    </p>
 
-            <h2>Find Us</h2>
+                </article>
 
-            <p>
-                Visit us at either of our locations in Gqeberha and enjoy
-                our coffee, pastries and welcoming café atmosphere.
-            </p>
+            </div>
 
-            <!-- Google Maps link -->
-            <p>
-                <a href="https://www.google.com/maps" target="_blank">
-                    View our locations on Google Maps
+
+            <!-- Google Maps -->
+            <div class="map-link">
+
+                <a href="https://www.google.com/maps"
+                   target="_blank"
+                   rel="noopener noreferrer"
+                   class="btn">
+                    View on Google Maps
                 </a>
-            </p>
+
+            </div>
 
         </section>
 
-        <!-- Contact form -->
-        <section>
 
-            <h2>Send Us a Message</h2>
+        <!-- ==================== CONTACT FORM ==================== -->
+        <section class="contact-form-section">
 
-            <!-- Contact form fields -->
-            <form>
+            <div class="container">
 
-                <!-- Full name field -->
-                <label for="name">Full Name:</label>
-                <input type="text" id="name" name="name">
+                <div class="contact-form-container">
 
-                <!-- Email field -->
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email">
+                    <p class="small-heading">SEND US A MESSAGE</p>
 
-                <!-- Subject field -->
-                <label for="subject">Subject:</label>
-                <input type="text" id="subject" name="subject">
+                    <h2>Contact Côtière Brew Café</h2>
 
-                <!-- Message field -->
-                <label for="message">Message:</label>
-                <textarea id="message" name="message" rows="6" cols="40"></textarea>
+                    <p>
+                        Complete the form below and send us a message.
+                    </p>
 
-                <!-- Submit button -->
-                <input type="submit" value="Send Message">
 
-            </form>
+                    <form>
+
+                        <!-- Full name -->
+                        <div class="form-group">
+
+                            <label for="full-name">
+                                Full Name
+                            </label>
+
+                            <input
+                                type="text"
+                                id="full-name"
+                                name="full_name"
+                                placeholder="Enter your full name"
+                                required
+                            >
+
+                        </div>
+
+
+                        <!-- Email -->
+                        <div class="form-group">
+
+                            <label for="contact-email">
+                                Email Address
+                            </label>
+
+                            <input
+                                type="email"
+                                id="contact-email"
+                                name="email"
+                                placeholder="Enter your email address"
+                                required
+                            >
+
+                        </div>
+
+
+                        <!-- Subject -->
+                        <div class="form-group">
+
+                            <label for="subject">
+                                Subject
+                            </label>
+
+                            <input
+                                type="text"
+                                id="subject"
+                                name="subject"
+                                placeholder="Enter the subject"
+                                required
+                            >
+
+                        </div>
+
+
+                        <!-- Message -->
+                        <div class="form-group">
+
+                            <label for="contact-message">
+                                Message
+                            </label>
+
+                            <textarea
+                                id="contact-message"
+                                name="message"
+                                rows="7"
+                                placeholder="Type your message here..."
+                                required
+                            ></textarea>
+
+                        </div>
+
+
+                        <!-- Submit button -->
+                        <div class="form-submit">
+
+                            <input
+                                type="submit"
+                                value="Send Message"
+                            >
+
+                        </div>
+
+                    </form>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ==================== CONTACT CTA ==================== -->
+        <section class="about-everyone">
+
+            <div class="container">
+
+                <p class="small-heading">CÔTIÈRE BREW CAFÉ</p>
+
+                <h2>Fresh Coffee • Fresh Moments</h2>
+
+                <p>
+                    We look forward to welcoming you to Côtière Brew Café.
+                </p>
+
+                <a href="menu.html" class="btn">
+                    Explore Our Menu
+                </a>
+
+            </div>
 
         </section>
 
     </main>
 
-    <!-- Footer -->
+
+    <!-- ==================== FOOTER ==================== -->
     <footer>
 
-        <p>&copy; 2026 Côtière Brew Café. All rights reserved.</p>
+        <div class="container">
+
+            <p>
+                &copy; 2026 Côtière Brew Café. All rights reserved.
+            </p>
+
+        </div>
 
     </footer>
 
