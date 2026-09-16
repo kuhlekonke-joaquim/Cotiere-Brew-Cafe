@@ -744,3 +744,261 @@ footer p {
         overflow-x: auto;
     }
 }
+/* =========================================================
+   ABOUT US & MENU PAGE STYLING
+   Clean café-inspired layout
+   ========================================================= */
+
+
+/* ==================== SMALL SECTION LABEL ==================== */
+
+.small-heading {
+    margin-bottom: 10px;
+    color: var(--terracotta);
+    font-size: 0.85rem;
+    font-weight: bold;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+
+
+/* ==================== ABOUT STORY ==================== */
+
+.about-story {
+    padding: 70px 0;
+    background-color: var(--cream);
+}
+
+.about-story-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+    align-items: center;
+}
+
+.about-story-text h2 {
+    margin-bottom: 20px;
+    color: var(--espresso);
+    font-size: 2.5rem;
+}
+
+.about-story-text p {
+    line-height: 1.8;
+    margin-bottom: 18px;
+}
+
+.about-story-image img {
+    width: 100%;
+    height: 430px;
+    object-fit: cover;
+    border-radius: 4px;
+    box-shadow: 0 10px 25px var(--shadow);
+}
+
+
+/* ==================== MISSION & VISION ==================== */
+
+.mission-vision {
+    padding-top: 80px;
+    padding-bottom: 80px;
+    text-align: center;
+}
+
+.mission-vision-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    margin-top: 45px;
+}
+
+.mission-vision-content article {
+    padding: 10px 35px;
+    border-left: 2px solid var(--butter);
+    text-align: left;
+}
+
+.mission-vision-content h3 {
+    margin-bottom: 15px;
+    color: var(--coffee);
+    font-size: 1.5rem;
+}
+
+.mission-vision-content p {
+    line-height: 1.8;
+}
+
+
+/* ==================== A PLACE FOR EVERYONE ==================== */
+
+.about-everyone {
+    padding: 80px 0;
+    background-color: var(--espresso);
+    color: var(--white);
+    text-align: center;
+}
+
+.about-everyone h2 {
+    margin-bottom: 20px;
+    color: var(--cream-light);
+    font-size: 2.5rem;
+}
+
+.about-everyone p {
+    max-width: 750px;
+    margin: 0 auto 18px;
+    line-height: 1.8;
+}
+
+.about-everyone .small-heading {
+    color: var(--butter);
+}
+
+
+/* ==================== MENU LIST ==================== */
+
+.menu-list {
+    max-width: 950px;
+    margin: 35px auto 0;
+}
+
+
+/* Individual menu item */
+
+.menu-list .menu-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 30px;
+    padding: 25px 5px;
+    border-bottom: 1px solid var(--butter);
+    background-color: transparent;
+    box-shadow: none;
+    border-radius: 0;
+}
+
+
+/* Menu item title */
+
+.menu-list .menu-item h3 {
+    margin-bottom: 7px;
+    color: var(--espresso);
+    font-size: 1.15rem;
+}
+
+
+/* Menu item description */
+
+.menu-list .menu-item p {
+    margin: 0;
+    color: var(--soft-brown);
+    line-height: 1.6;
+}
+
+
+/* Menu item price */
+
+.menu-list .menu-item span {
+    flex-shrink: 0;
+    color: var(--coffee);
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+
+/* ==================== MENU SECTIONS ==================== */
+
+.menu-section {
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.menu-section + .menu-section {
+    padding-top: 20px;
+}
+
+
+/* ==================== MENU HOVER EFFECT ==================== */
+
+.menu-list .menu-item:hover {
+    padding-left: 15px;
+    padding-right: 15px;
+    background-color: var(--cream-light);
+    transition: 0.3s ease;
+}
+
+
+/* ==================== MOBILE DESIGN ==================== */
+
+@media (max-width: 900px) {
+
+    /* About story becomes one column */
+    .about-story-content {
+        grid-template-columns: 1fr;
+        gap: 35px;
+    }
+
+    .about-story-image {
+        order: -1;
+    }
+
+    .about-story-image img {
+        height: 350px;
+    }
+
+    /* Mission and vision stack */
+    .mission-vision-content {
+        grid-template-columns: 1fr;
+        gap: 35px;
+    }
+
+}
+
+
+/* ==================== SMALL MOBILE SCREENS ==================== */
+
+@media (max-width: 600px) {
+
+    .about-story {
+        padding: 50px 0;
+    }
+
+    .about-story-text h2,
+    .about-everyone h2 {
+        font-size: 2rem;
+    }
+
+    .about-story-image img {
+        height: 280px;
+    }
+
+    .mission-vision {
+        padding-top: 55px;
+        padding-bottom: 55px;
+    }
+
+    .mission-vision-content article {
+        padding: 5px 20px;
+    }
+
+    .about-everyone {
+        padding: 60px 0;
+    }
+
+    /* Stack menu item information on small screens */
+    .menu-list .menu-item {
+        gap: 15px;
+    }
+
+    .menu-list .menu-item h3 {
+        font-size: 1rem;
+    }
+
+    .menu-list .menu-item p {
+        font-size: 0.9rem;
+    }
+
+    .menu-list .menu-item span {
+        font-size: 1rem;
+    }
+
+}
