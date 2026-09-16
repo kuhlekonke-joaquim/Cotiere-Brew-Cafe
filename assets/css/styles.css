@@ -1,0 +1,746 @@
+
+/* =========================================================
+   1. DEFAULT / RESET STYLES
+   ========================================================= */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #f8f1e5;
+    color: #3b2922;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.7;
+    min-height: 100vh;
+}
+
+
+/* =========================================================
+   2. COLOUR PALETTE
+   Warm French café colours
+   ========================================================= */
+
+:root {
+    --espresso: #3b2922;
+    --coffee: #5a3825;
+    --cream: #f8f1e5;
+    --cream-light: #fffaf2;
+    --butter: #e8d5ad;
+    --sage: #7b8063;
+    --terracotta: #b96f4a;
+    --white: #ffffff;
+    --soft-brown: #80685a;
+    --shadow: rgba(59, 41, 34, 0.15);
+}
+
+
+/* =========================================================
+   3. TYPOGRAPHY
+   ========================================================= */
+
+h1,
+h2,
+h3 {
+    font-family: Georgia, "Times New Roman", serif;
+    color: var(--espresso);
+    line-height: 1.2;
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+h2 {
+    font-size: 2.2rem;
+    margin-bottom: 1rem;
+}
+
+h3 {
+    font-size: 1.35rem;
+    margin-bottom: 0.5rem;
+}
+
+p {
+    margin-bottom: 1rem;
+}
+
+a {
+    color: var(--coffee);
+    text-decoration: none;
+    transition: 0.3s ease;
+}
+
+
+/* =========================================================
+   4. HEADER
+   ========================================================= */
+
+header {
+    background-color: var(--espresso);
+    color: var(--white);
+    padding: 1.2rem 5%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 2rem;
+
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+
+    box-shadow: 0 3px 12px var(--shadow);
+}
+
+header h1 {
+    color: var(--butter);
+    font-size: 1.8rem;
+    white-space: nowrap;
+}
+
+
+/* =========================================================
+   5. NAVIGATION
+   ========================================================= */
+
+nav {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+}
+
+nav a {
+    color: var(--white);
+    padding: 0.55rem 0.8rem;
+    border-radius: 20px;
+    font-size: 0.95rem;
+}
+
+
+/* Navigation hover effect */
+nav a:hover {
+    background-color: var(--terracotta);
+    color: var(--white);
+    transform: translateY(-2px);
+}
+
+
+/* Navigation focus effect */
+nav a:focus {
+    outline: 3px solid var(--butter);
+    outline-offset: 3px;
+}
+
+
+/* =========================================================
+   6. MAIN LAYOUT
+   ========================================================= */
+
+main {
+    width: min(1150px, 90%);
+    margin: 0 auto;
+}
+
+section {
+    margin: 4rem 0;
+}
+
+
+/* =========================================================
+   7. HERO SECTION
+   Used on the Home page
+   ========================================================= */
+
+.hero {
+    min-height: 75vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+
+    padding: 5rem 2rem;
+
+    background:
+        linear-gradient(
+            rgba(59, 41, 34, 0.62),
+            rgba(59, 41, 34, 0.62)
+        ),
+        url("../images/CafeExterior.jpg") center / cover no-repeat;
+
+    border-radius: 0 0 35px 35px;
+
+    color: var(--white);
+}
+
+.hero-content {
+    max-width: 750px;
+}
+
+.hero h2 {
+    color: var(--white);
+    font-size: clamp(2.5rem, 6vw, 5rem);
+    margin-bottom: 1rem;
+}
+
+.hero p {
+    color: var(--white);
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+
+/* =========================================================
+   8. BUTTONS
+   Both .btn and .button are supported
+   ========================================================= */
+
+.btn,
+.button,
+input[type="submit"] {
+    display: inline-block;
+
+    background-color: var(--terracotta);
+    color: var(--white);
+
+    border: none;
+
+    padding: 0.8rem 1.5rem;
+
+    border-radius: 30px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.3s ease;
+}
+
+
+/* Button hover effect */
+.btn:hover,
+.button:hover,
+input[type="submit"]:hover {
+    background-color: var(--coffee);
+
+    color: var(--white);
+
+    transform: translateY(-3px);
+
+    box-shadow: 0 8px 18px var(--shadow);
+}
+
+
+/* Button active effect */
+.btn:active,
+.button:active,
+input[type="submit"]:active {
+    transform: translateY(0);
+}
+
+
+/* =========================================================
+   9. SECTION HEADINGS
+   ========================================================= */
+
+.section-heading {
+    text-align: center;
+    max-width: 750px;
+    margin: 0 auto 2rem;
+}
+
+.section-heading p {
+    color: var(--soft-brown);
+}
+
+
+/* =========================================================
+   10. INTRODUCTION SECTIONS
+   ========================================================= */
+
+.intro {
+    text-align: center;
+    max-width: 800px;
+
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.intro p {
+    color: var(--soft-brown);
+}
+
+
+/* =========================================================
+   11. CARDS
+   ========================================================= */
+
+.card-grid {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 1.5rem;
+}
+
+.card {
+    background-color: var(--cream-light);
+
+    border-radius: 20px;
+
+    padding: 1.8rem;
+
+    box-shadow: 0 8px 25px var(--shadow);
+
+    border: 1px solid rgba(185, 111, 74, 0.15);
+
+    transition: 0.3s ease;
+}
+
+
+/* Card hover effect */
+.card:hover {
+    transform: translateY(-8px);
+
+    box-shadow: 0 15px 30px var(--shadow);
+}
+
+.card img {
+    width: 100%;
+
+    height: 230px;
+
+    object-fit: cover;
+
+    border-radius: 15px;
+
+    margin-bottom: 1rem;
+}
+
+
+/* =========================================================
+   12. ABOUT PAGE
+   ========================================================= */
+
+.about-layout {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 2rem;
+
+    align-items: center;
+}
+
+.about-image {
+    width: 100%;
+
+    border-radius: 25px;
+
+    box-shadow: 0 12px 30px var(--shadow);
+}
+
+.info-box {
+    background-color: var(--cream-light);
+
+    padding: 2rem;
+
+    border-radius: 20px;
+
+    border-left: 6px solid var(--terracotta);
+
+    box-shadow: 0 8px 25px var(--shadow);
+}
+
+
+/* =========================================================
+   13. MENU PAGE
+   ========================================================= */
+
+.menu-section {
+    background-color: var(--cream-light);
+
+    padding: 2rem;
+
+    border-radius: 25px;
+
+    margin-bottom: 2rem;
+
+    box-shadow: 0 8px 25px var(--shadow);
+}
+
+.menu-section h2 {
+    border-bottom: 2px solid var(--butter);
+
+    padding-bottom: 0.7rem;
+}
+
+.menu-item {
+    display: flex;
+
+    justify-content: space-between;
+
+    gap: 1rem;
+
+    padding: 1rem 0;
+
+    border-bottom: 1px dashed #cdbca8;
+}
+
+.menu-item:last-child {
+    border-bottom: none;
+}
+
+.menu-item strong {
+    color: var(--coffee);
+}
+
+
+/* =========================================================
+   14. GALLERY
+   ========================================================= */
+
+.gallery-section {
+    margin-bottom: 4rem;
+}
+
+.gallery-grid {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 1.2rem;
+}
+
+.gallery-grid img {
+    width: 100%;
+
+    height: 260px;
+
+    object-fit: cover;
+
+    border-radius: 18px;
+
+    box-shadow: 0 8px 20px var(--shadow);
+
+    transition: 0.3s ease;
+}
+
+
+/* Gallery hover effect */
+.gallery-grid img:hover {
+    transform: scale(1.03);
+
+    filter: brightness(0.9);
+}
+
+
+/* =========================================================
+   15. FORMS
+   ========================================================= */
+
+.form-container {
+    max-width: 750px;
+
+    margin: 0 auto;
+
+    background-color: var(--cream-light);
+
+    padding: 2.5rem;
+
+    border-radius: 25px;
+
+    box-shadow: 0 10px 30px var(--shadow);
+}
+
+.form-group {
+    margin-bottom: 1.3rem;
+}
+
+label {
+    display: block;
+
+    font-weight: bold;
+
+    margin-bottom: 0.4rem;
+
+    color: var(--coffee);
+}
+
+input,
+select,
+textarea {
+    width: 100%;
+
+    padding: 0.9rem 1rem;
+
+    border: 2px solid #d8c8b7;
+
+    border-radius: 12px;
+
+    background-color: var(--white);
+
+    color: var(--espresso);
+
+    font-family: inherit;
+
+    font-size: 1rem;
+}
+
+
+/* Form focus effect */
+input:focus,
+select:focus,
+textarea:focus {
+    outline: none;
+
+    border-color: var(--terracotta);
+
+    box-shadow: 0 0 0 4px rgba(185, 111, 74, 0.15);
+}
+
+textarea {
+    min-height: 160px;
+
+    resize: vertical;
+}
+
+
+/* =========================================================
+   16. CONTACT INFORMATION
+   ========================================================= */
+
+.contact-grid {
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 1.5rem;
+}
+
+.contact-card {
+    background-color: var(--cream-light);
+
+    padding: 2rem;
+
+    border-radius: 20px;
+
+    box-shadow: 0 8px 25px var(--shadow);
+}
+
+.contact-card h3 {
+    color: var(--terracotta);
+}
+
+
+/* =========================================================
+   17. TABLES
+   ========================================================= */
+
+table {
+    width: 100%;
+
+    border-collapse: collapse;
+
+    background-color: var(--cream-light);
+
+    border-radius: 15px;
+
+    overflow: hidden;
+
+    box-shadow: 0 8px 25px var(--shadow);
+}
+
+th,
+td {
+    padding: 1rem;
+
+    text-align: left;
+
+    border-bottom: 1px solid #e1d4c5;
+}
+
+th {
+    background-color: var(--espresso);
+
+    color: var(--white);
+}
+
+tr:hover {
+    background-color: #f1e5d4;
+}
+
+
+/* =========================================================
+   18. IMAGES
+   ========================================================= */
+
+img {
+    max-width: 100%;
+
+    height: auto;
+}
+
+
+/* =========================================================
+   19. FOOTER
+   ========================================================= */
+
+footer {
+    background-color: var(--espresso);
+
+    color: var(--white);
+
+    text-align: center;
+
+    padding: 2rem 5%;
+
+    margin-top: 5rem;
+}
+
+footer p {
+    margin-bottom: 0;
+}
+
+
+/* =========================================================
+   20. TABLET BREAKPOINT
+   ========================================================= */
+
+@media (max-width: 900px) {
+
+    header {
+        flex-direction: column;
+
+        text-align: center;
+    }
+
+    nav {
+        justify-content: center;
+    }
+
+    .card-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .gallery-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .about-layout {
+        grid-template-columns: 1fr;
+    }
+
+    .contact-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+/* =========================================================
+   21. MOBILE BREAKPOINT
+   ========================================================= */
+
+@media (max-width: 600px) {
+
+    body {
+        font-size: 0.95rem;
+    }
+
+    header {
+        padding: 1rem;
+
+        position: relative;
+    }
+
+    header h1 {
+        font-size: 1.5rem;
+    }
+
+    nav {
+        width: 100%;
+
+        flex-direction: column;
+
+        gap: 0.2rem;
+    }
+
+    nav a {
+        width: 100%;
+
+        text-align: center;
+    }
+
+    main {
+        width: 92%;
+    }
+
+    section {
+        margin: 2.5rem 0;
+    }
+
+    h1 {
+        font-size: 2.2rem;
+    }
+
+    h2 {
+        font-size: 1.8rem;
+    }
+
+    h3 {
+        font-size: 1.2rem;
+    }
+
+    .hero {
+        min-height: 60vh;
+
+        padding: 3rem 1rem;
+
+        border-radius: 0 0 20px 20px;
+    }
+
+    .hero h2 {
+        font-size: 2.5rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
+    }
+
+    .card-grid,
+    .gallery-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .card img,
+    .gallery-grid img {
+        height: 240px;
+    }
+
+    .form-container {
+        padding: 1.5rem;
+    }
+
+    .menu-item {
+        flex-direction: column;
+
+        gap: 0.2rem;
+    }
+
+    table {
+        display: block;
+
+        overflow-x: auto;
+    }
+}
