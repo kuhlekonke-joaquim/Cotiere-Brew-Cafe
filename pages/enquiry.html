@@ -2,16 +2,23 @@
 <html lang="en">
 
 <head>
-     <meta charset="UTF-8">
-     <meta name="viewport" content="width, initial-scale=1.0">
-     <title>Côtière Brew Café</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enquiry - Côtière Brew Café</title>
+
+    <!-- the external CSS stylesheet link -->
+    <link rel="stylesheet" href="../assets/css/styles.css">
+    
 </head>
 
 <body>
 
+    <!-- Header and navigation -->
     <header>
+
         <h1>Côtière Brew Café</h1>
 
+        <!-- Main navigation links -->
         <nav>
             <a href="../index.html">Home</a>
             <a href="about.html">About Us</a>
@@ -22,32 +29,36 @@
         </nav>
 
     </header>
+
+    <!-- Main enquiry content -->
     <main>
 
+        <!-- Enquiry form section -->
         <section>
 
             <h2>Enquiry Form</h2>
 
+            <!-- Introduction to the enquiry form -->
             <p>
                 Have a question about our café, menu, or services?
             </p>
 
             <p>
-                 Please fill out the form bellow and we'll get back to you as soon as possible.
+                Please fill out the form below and we'll get back to you as soon as possible.
             </p>
-            
+
             <!-- Enquiry Form -->
             <form action="submit_enquiry.php" method="post">
 
-                <!-- Name and Surname  -->
+                <!-- Name and Surname field -->
                 <label for="name">Name and Surname:</label>
                 <input type="text" id="name" name="name" required>
 
-                <!-- Email  -->
+                <!-- Email field -->
                 <label for="email">Email:</label>
                 <input type="email" id="email" name="email" required>
 
-                  <!-- Enquiry Type -->
+                <!-- Enquiry Type selection -->
                 <label for="enquiry_type">Enquiry Type:</label>
                 <select id="enquiry_type" name="enquiry_type" required>
                     <option value="">Select an option</option>
@@ -55,22 +66,31 @@
                     <option value="menu">Menu Enquiry</option>
                     <option value="reservation">Reservation Enquiry</option>
                     <option value="feedback">Feedback</option>
-
                 </select>
-                
-                 <!-- Message  -->
-                <label for="message">Message:</label>
-                <textarea id="message" name="message" rows="6" cols="40" required></textarea> 
 
-                <!-- Submit Button -->
+                <!-- Message field -->
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="6" cols="40" required></textarea>
+
+                <!-- Submit button -->
                 <input type="submit" value="Submit Enquiry">
+
             </form>
 
+            <!-- Response information -->
             <p>
-                 We will respond to your enquiry as soon as possible.
+                We will respond to your enquiry as soon as possible.
             </p>
 
         </section>
+
     </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Côtière Brew Café. All rights reserved.</p>
+    </footer>
+
 </body>
+
 </html>
