@@ -259,6 +259,15 @@ The planning considers:
 
 The wireframe planning is included in the project proposal where required.
 
+
+## Design Concept
+
+Côtière Brew Café uses a French-inspired café concept.
+
+The website focuses on coffee, French-inspired pastries, food, featured products and a welcoming café atmosphere.
+
+The design aims to present the information clearly while creating a relaxed café experience for visitors.
+
 ## Part 2 – Website Styling and Design
 
 Part 2 focuses on improving the visual appearance, layout and usability of the Côtière Brew Café website.
@@ -349,15 +358,6 @@ The following were checked:
 - Tablet layouts display correctly.
 - Desktop layouts display correctly.
 - No major horizontal overflow was present during responsive testing.
-
-
-## Design Concept
-
-Côtière Brew Café uses a French-inspired café concept.
-
-The website focuses on coffee, French-inspired pastries, food, featured products and a welcoming café atmosphere.
-
-The design aims to present the information clearly while creating a relaxed café experience for visitors.
 
 ## Development Tools
 
