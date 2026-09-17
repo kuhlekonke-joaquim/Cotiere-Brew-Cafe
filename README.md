@@ -259,6 +259,98 @@ The planning considers:
 
 The wireframe planning is included in the project proposal where required.
 
+## Part 2 – Website Styling and Design
+
+Part 2 focuses on improving the visual appearance, layout and usability of the Côtière Brew Café website.
+
+The website was styled using an external CSS stylesheet. The styling was applied consistently across the different website pages while allowing individual sections to have page-specific layouts.
+
+### Colour Palette
+
+The website uses a warm coffee-inspired colour palette consisting of:
+
+- Dark brown
+- Coffee brown
+- Cream
+- Light cream
+- White
+- Sage
+- Terracotta
+
+The colours were selected to support the French-inspired café concept and create a warm, welcoming appearance.
+
+### Typography and Layout
+
+The website uses different typography styles for headings and body content to create visual hierarchy.
+
+The layouts use:
+
+- Clear headings and sections
+- Consistent spacing
+- Rounded cards and containers
+- Soft shadows
+- Responsive images
+- Styled buttons
+- Structured menu sections
+- Form layouts
+- Gallery grids
+
+### CSS Features
+
+The external stylesheet includes:
+
+- CSS variables for the colour palette
+- Typography styling
+- Header and navigation styling
+- Hero section styling
+- Button styling
+- Card layouts
+- About page layouts
+- Menu layouts
+- Gallery layouts
+- Contact layouts
+- Enquiry form styling
+- Contact form styling
+- Footer styling
+- Responsive layouts
+- Hover states
+- Focus states
+- Active states
+- Media queries
+
+### Responsive Design
+
+The website was tested at different screen sizes using Google Chrome Developer Tools.
+
+Testing was performed on:
+
+- Desktop screen sizes
+- Tablet screen sizes
+- Mobile screen sizes
+
+The website was checked to ensure that content remains visible and usable at smaller screen sizes.
+
+The responsive design adjusts layouts, images, cards, forms and other page elements to fit different screen sizes.
+
+### Website Testing
+
+Final technical testing was performed after the styling was completed.
+
+The following were checked:
+
+- All pages display correctly.
+- Navigation links work correctly.
+- Images display correctly.
+- Forms display correctly.
+- Buttons display correctly.
+- Hover effects work correctly.
+- Form focus effects work correctly.
+- Mobile layouts display correctly.
+- Tablet layouts display correctly.
+- Desktop layouts display correctly.
+- No major horizontal overflow was present during responsive testing.
+
+
 ## Design Concept
 
 Côtière Brew Café uses a French-inspired café concept.
@@ -351,6 +443,23 @@ The Contact page contains a contact form for visitors to provide their informati
 - Checked forms.
 - Reviewed the website structure.
 
+### Version 1.3 – Styling and Responsive Design
+
+- Added an external CSS stylesheet.
+- Added the café colour palette.
+- Improved typography and page layouts.
+- Styled the Home page.
+- Styled the About Us page.
+- Styled the Menu page.
+- Styled the Gallery page.
+- Styled the Enquiry page.
+- Styled the Contact page.
+- Added button hover effects.
+- Added navigation hover effects.
+- Added form focus effects.
+- Added responsive layouts for different screen sizes.
+- Tested the website on desktop, tablet and mobile screen sizes.
+
 ### Final Updates
 
 - Continue improving page layouts and presentation.
@@ -379,7 +488,7 @@ Testing includes:
 
 ## GitHub Repository
 
-The project is maintained using a private GitHub repository as required by the project brief.
+The project is maintained using a GitHub repository as required by the project brief.
 
 Changes are committed regularly using descriptive commit messages.
 
