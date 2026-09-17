@@ -510,6 +510,20 @@ Pinterest. (n.d.). Pinterest. Available at: https://www.pinterest.com [Accessed 
 
 Pinterest was used to locate visual references and images for the café website. Image source information is documented in the project's research and image-sourcing material.
 
+Part 2 References
+
+MDN Web Docs. (n.d.). CSS flexible box layout. Available at: https://developer.mozilla.org/en-US/docs/Web/CSS/Guides/Flexible_box_layout [Accessed 17 September 2026].
+
+MDN Web Docs. (n.d.). CSS Grid Layout. Available at: https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/CSS_layout/Grids [Accessed 17 September 2026].
+
+MDN Web Docs. (n.d.). CSS media queries. Available at: https://developer.mozilla.org/en-US/docs/Web/CSS/Guides/Media_queries [Accessed 17 September 2026].
+
+MDN Web Docs. (n.d.). Using CSS custom properties (variables). Available at: https://developer.mozilla.org/en-US/docs/Web/CSS/Guides/Cascading_variables/Using_custom_properties [Accessed 17 September 2026].
+
+MDN Web Docs. (n.d.). Pseudo-classes. Available at: https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Selectors/Pseudo-classes [Accessed 17 September 2026].
+
+MDN Web Docs. (n.d.). Responsive web design. Available at: https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/CSS_layout/Responsive_Design [Accessed 17 September 2026].
+
 ## Project Documentation
 
 The project documentation includes:
