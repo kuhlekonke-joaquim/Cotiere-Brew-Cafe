@@ -279,9 +279,26 @@ The screenshots include:
 - Contact form.
 - Form validation.
 - Enquiry form.
-- Responsive mobile layout.
+- mobile view.
+- tablet view.
+- laptop view.
 - GitHub repository.
 
+## Responsive Design Screenshots
+
+The Côtière Brew Café website was designed to adapt to different screen sizes. The following screenshots demonstrate the responsive layouts on desktop, tablet and mobile devices.
+
+### Laptop View
+
+![Laptop View](evidence/laptop-view.png.png)
+
+### Tablet View
+
+![Tablet View](evidence/tablet-view.png.png)
+
+### Mobile View
+
+![Mobile View](evidence/mobile-view.png.png)
 ## Changelog
 
 ### Version 1.0 – Initial Website Structure
