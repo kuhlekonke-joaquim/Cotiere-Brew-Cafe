@@ -264,6 +264,9 @@ The GitHub repository contains the website files, assets, documentation and supp
 Repository:  
 https://github.com/kuhlekonke-joaquim/Cotiere-Brew-Cafe
 
+Website:
+https://kuhlekonke-joaquim.github.io/Cotiere-Brew-Cafe/
+
 ## Evidence
 
 An `evidence` folder is included in the project to organise screenshots of the website's functionality and testing.
