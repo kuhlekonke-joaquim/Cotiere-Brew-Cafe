@@ -82,111 +82,86 @@
 
 
                     <!-- Enquiry form -->
-                    <form action="submit_enquiry.php" method="post">
+                    
+<form action="https://formsubmit.co/jaqueen.jakkie@gmail.com" method="POST">
 
-                        <!-- Name and surname -->
-                        <div class="form-group">
+    <!-- Email subject -->
+    <input type="hidden" name="_subject" value="New Enquiry - Côtière Brew Café">
 
-                            <label for="name">
-                                Name and Surname
-                            </label>
+    <!-- Email layout -->
+    <input type="hidden" name="_template" value="table">
 
-                            <input
-                                type="text"
-                                id="name"
-                                name="name"
-                                placeholder="Enter your name and surname"
-                                required
-                            >
+    <!-- Spam protection -->
+    <input type="text" name="_honey" style="display:none">
 
-                        </div>
+    <!-- Name and surname -->
+    <div class="form-group">
+        <label for="name">Name and Surname</label>
 
+        <input
+            type="text"
+            id="name"
+            name="name"
+            placeholder="Enter your name and surname"
+            minlength="2"
+            maxlength="80"
+            required
+        >
+    </div>
 
-                        <!-- Email address -->
-                        <div class="form-group">
+    <!-- Email address -->
+    <div class="form-group">
+        <label for="email">Email Address</label>
 
-                            <label for="email">
-                                Email Address
-                            </label>
+        <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Enter your email address"
+            required
+        >
+    </div>
 
-                            <input
-                                type="email"
-                                id="email"
-                                name="email"
-                                placeholder="Enter your email address"
-                                required
-                            >
+    <!-- Enquiry type -->
+    <div class="form-group">
+        <label for="enquiry-type">Enquiry Type</label>
 
-                        </div>
+        <select id="enquiry-type" name="enquiry_type" required>
 
+            <option value="" disabled selected>
+                Select an enquiry type
+            </option>
 
-                        <!-- Enquiry type -->
-                        <div class="form-group">
+            <option value="General Enquiry">General Enquiry</option>
+            <option value="Menu">Menu</option>
+            <option value="Reservation">Reservation</option>
+            <option value="Feedback">Feedback</option>
 
-                            <label for="enquiry-type">
-                                Enquiry Type
-                            </label>
+        </select>
+    </div>
 
-                            <select
-                                id="enquiry-type"
-                                name="enquiry_type"
-                                required
-                            >
+    <!-- Message -->
+    <div class="form-group">
+        <label for="message">Message</label>
 
-                                <option value="" disabled selected>
-                                    Select an enquiry type
-                                </option>
+        <textarea
+            id="message"
+            name="message"
+            rows="7"
+            minlength="10"
+            maxlength="1000"
+            placeholder="Type your enquiry here..."
+            required
+        ></textarea>
+    </div>
 
-                                <option value="general">
-                                    General Enquiry
-                                </option>
+    <!-- Submit button -->
+    <div class="form-submit">
+        <input type="submit" value="Send Enquiry">
+    </div>
 
-                                <option value="menu">
-                                    Menu
-                                </option>
+</form>
 
-                                <option value="reservation">
-                                    Reservation
-                                </option>
-
-                                <option value="feedback">
-                                    Feedback
-                                </option>
-
-                            </select>
-
-                        </div>
-
-
-                        <!-- Message -->
-                        <div class="form-group">
-
-                            <label for="message">
-                                Message
-                            </label>
-
-                            <textarea
-                                id="message"
-                                name="message"
-                                rows="7"
-                                placeholder="Type your enquiry here..."
-                                required
-                            ></textarea>
-
-                        </div>
-
-
-                        <!-- Submit button -->
-                        <div class="form-submit">
-
-                            <input
-                                type="submit"
-                                value="Send Enquiry"
-                            >
-
-                        </div>
-
-                    </form>
 
 
                     <!-- Response information -->
