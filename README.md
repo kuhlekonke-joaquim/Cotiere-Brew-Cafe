@@ -7,272 +7,121 @@ Côtière Brew Café Website
 ## Student Information
 
 Student Name: Kuhlekonke Joaquim  
-Student Number: ST10534065  
-Institution: Rosebank International University College NMB
+Institution: Rosebank International University College NMB  
 Course: Diploma in Software Development  
+Module: WEDE5020
 
 ## Project Overview
 
-Côtière Brew Café is a French-inspired café website created as part of the Web Development project. The website provides customers with information about the café, its menu, food, pastries, beverages, featured items, gallery, enquiries and contact details.
+Côtière Brew Café is a French-inspired café website created as part of the Web Development project.
 
-The website is designed to give visitors an easy and welcoming way to explore the café, view its products, find contact information and make enquiries.
+The website provides visitors with information about the café, its menu, food, pastries, beverages, gallery, enquiries and contact details.
+
+The website aims to provide a welcoming and user-friendly browsing experience while allowing visitors to explore the café and communicate through online forms.
 
 ## Website Goals and Objectives
 
-The main goals and objectives of the website are:
+The main goals of the website are:
 
 - To create an online presence for Côtière Brew Café.
 - To introduce visitors to the café and its concept.
-- To provide information about the café and its services.
 - To display food, pastries and beverages.
 - To display menu items and prices.
-- To showcase featured items.
 - To showcase the café's interior and exterior.
-- To allow visitors to submit enquiries.
+- To allow visitors to submit enquiries and contact messages.
 - To provide contact information and opening hours.
-- To provide location information.
 - To create clear navigation between all website pages.
-- To provide a simple and user-friendly browsing experience.
-
-## Key Features and Functionality
-
-The website includes:
-
-- A Home page.
-- An About Us page.
-- A Menu page.
-- A Gallery page.
-- An Enquiry page.
-- A Contact page.
-- A navigation menu.
-- Café introduction and information.
-- Featured items.
-- Food and pastry menu items.
-- Beverage menu items.
-- Menu pricing.
-- Café exterior images.
-- Café interior images.
-- Featured item images.
-- An enquiry form.
-- A contact form.
-- Contact information.
-- Opening hours.
-- Café location information.
-- Map/location information.
-- Footer information.
-- Internal links connecting all website pages.
+- To provide a responsive and user-friendly browsing experience.
 
 ## Website Pages
 
-### Home
+The website consists of six HTML pages:
 
-The Home page introduces Côtière Brew Café and provides visitors with an overview of the café, its atmosphere and featured items.
+### Home
+Introduces Côtière Brew Café and displays an overview of the café and featured items.
 
 ### About Us
-
-The About Us page provides information about Côtière Brew Café, its concept, purpose, mission and vision.
+Provides information about the café, its concept, purpose, mission and vision.
 
 ### Menu
-
-The Menu page displays the café's food, pastries and beverages together with their prices.
+Displays the café's food, pastries and beverages together with their prices. It also includes a search feature that allows visitors to find menu items.
 
 ### Gallery
-
-The Gallery page showcases photographs of the café. The images are grouped into Exterior, Interior and Featured Items sections.
+Showcases photographs of the café, including exterior, interior and featured items. Visitors can click images to view them in an enlarged lightbox.
 
 ### Enquiry
-
-The Enquiry page allows visitors to submit an enquiry using a form containing their name, surname, email address, enquiry type and message.
+Allows visitors to submit an enquiry using a form containing their name, surname, email address, enquiry type and message.
 
 ### Contact
+Provides contact information, opening hours, location information and a contact form.
 
-The Contact page provides the café's contact information, opening hours, locations, map information and a contact form.
+## Technologies and Development Tools
 
-## Timeline and Milestones
+The website was developed using:
 
-### Phase 1 – Research and Planning
+- HTML5
+- CSS3
+- JavaScript
+- Visual Studio Code
+- GitHub
+- Google Chrome
 
-- Conduct research on the chosen organisation.
-- Gather relevant content from different sources.
-- Gather image sources.
-- Organise research material.
-- Develop the project proposal.
-- Plan the website structure.
-- Create the sitemap.
-- Plan the website pages.
-- Develop wireframes where required.
-- Create the project folder structure.
+## Project Folder Structure
 
-### Phase 2 – Website Development
+The project is organised into the following structure:
 
-- Create the required HTML pages.
-- Develop the Home page.
-- Develop the About Us page.
-- Develop the Menu page.
-- Develop the Gallery page.
-- Develop the Enquiry page.
-- Develop the Contact page.
-- Add website content.
-- Add menu items and prices.
-- Add featured items.
-- Add café images.
-- Add enquiry and contact forms.
-- Add navigation links.
-- Add footer information.
+```text
+COTIERE-BREW-CAFE/
+│
+├── index.html
+│
+├── pages/
+│   ├── about.html
+│   ├── contact.html
+│   ├── enquiry.html
+│   ├── gallery.html
+│   └── menu.html
+│
+├── assets/
+│   ├── css/
+│   │   └── styles.css
+│   │
+│   ├── images/
+│   │
+│   └── js/
+│       ├── gallery.js
+│       └── menu.js
+│
+├── components/
+│
+├── evidence/
+│
+└── README.md
+```
 
-### Phase 3 – Testing and Finalisation
+## Part 1 – Research and Planning
 
-- Test all website pages.
-- Test all navigation links.
-- Check image paths.
-- Check forms.
-- Check website content.
-- Fix broken links and file paths.
-- Review the website structure.
-- Update the README.
-- Commit changes to GitHub.
-- Push the final project to the remote repository.
-- Prepare the project for submission.
+Part 1 focused on researching and planning the Côtière Brew Café website.
 
-## Part 1 Details
-
-Part 1 focuses on the research, planning and initial development of the Côtière Brew Café website.
-
-The Part 1 work includes:
+The work included:
 
 - Organisation research.
 - Content research and sourcing.
 - Image research and sourcing.
 - Project proposal.
-- Website structure and planning.
-- Sitemap.
-- Website folder and file organisation.
-- Creation of the required HTML pages.
-- Basic HTML structure.
-- Headings, paragraphs, images and links.
-- Website navigation.
-- Initial website content.
-- Website testing and debugging.
-- GitHub repository setup.
-- README documentation.
-
-Part 2 and Part 3 will follow in future submissions and edits as required by the project brief.
-
-## Sitemap
-
-The Côtière Brew Café website contains the following main pages:
-
-Côtière Brew Café → Home  
-Home → About Us  
-Home → Menu  
-Home → Gallery  
-Home → Enquiry  
-Home → Contact  
-
-The visual sitemap is included in the project proposal and was created using SmartArt as required.
-
-## File and Folder Structure
-
-The project is organised into the following structure:
-
-COTIERE-BREW-CAFE  
-→ assets  
-→ assets/images  
-→ assets/js  
-→ components  
-→ components/footer.html  
-→ components/header.html  
-→ miscellaneous  
-→ miscellaneous/.gitignore  
-→ miscellaneous/README.md  
-→ pages  
-→ pages/about.html  
-→ pages/contact.html  
-→ pages/enquiry.html  
-→ pages/gallery.html  
-→ pages/menu.html  
-→ index.html  
-
-## Research and Content Sourcing
-
-Research was conducted to identify relevant content for the Côtière Brew Café website.
-
-The research covered:
-
-- Café information.
-- Café menu items.
-- Coffee and beverages.
-- French-inspired pastries.
-- Food items.
-- Café atmosphere.
-- Menu pricing.
-- Website content.
-- Image sourcing.
-
-The research material is organised separately in the project's research folder as required.
-
-## Research Folder
-
-A separate research folder is used to organise the research and sourcing material for the project.
-
-The research folder contains relevant:
-
-- Organisation information.
-- Website content research.
-- Research sources.
-- Image sources.
-
-The research folder is separate from the main website files so that the website project remains organised.
-
-## Project Proposal
-
-The project proposal contains the planning and research information for the Côtière Brew Café website.
-
-The proposal includes:
-
-- Project information.
-- Project overview.
 - Website goals and objectives.
 - Target audience.
-- Website planning.
 - Sitemap.
 - Wireframe planning.
-- Timeline and milestones.
-- Other required project planning information.
+- Website folder and file organisation.
+- Initial HTML page development.
+- GitHub repository setup.
 
-The visual sitemap was created using SmartArt as required by the project brief.
-
-## Wireframes
-
-Wireframes were used as part of the website planning process to plan the structure and layout of the website pages.
-
-The planning considers:
-
-- Header.
-- Navigation.
-- Main content.
-- Images.
-- Featured items.
-- Forms.
-- Footer.
-- Page-specific content.
-
-The wireframe planning is included in the project proposal where required.
-
-
-## Design Concept
-
-Côtière Brew Café uses a French-inspired café concept.
-
-The website focuses on coffee, French-inspired pastries, food, featured products and a welcoming café atmosphere.
-
-The design aims to present the information clearly while creating a relaxed café experience for visitors.
+The visual sitemap and wireframe planning were included in the project proposal.
 
 ## Part 2 – Website Styling and Design
 
-Part 2 focuses on improving the visual appearance, layout and usability of the Côtière Brew Café website.
-
-The website was styled using an external CSS stylesheet. The styling was applied consistently across the different website pages while allowing individual sections to have page-specific layouts.
+Part 2 focused on improving the visual appearance, layout and usability of the website.
 
 ### Colour Palette
 
@@ -286,120 +135,149 @@ The website uses a warm coffee-inspired colour palette consisting of:
 - Sage
 - Terracotta
 
-The colours were selected to support the French-inspired café concept and create a warm, welcoming appearance.
+The colours support the French-inspired café concept and create a warm and welcoming appearance.
 
 ### Typography and Layout
 
 The website uses different typography styles for headings and body content to create visual hierarchy.
 
-The layouts use:
+The layouts include:
 
-- Clear headings and sections
-- Consistent spacing
-- Rounded cards and containers
-- Soft shadows
-- Responsive images
-- Styled buttons
-- Structured menu sections
-- Form layouts
-- Gallery grids
+- Clear headings and sections.
+- Consistent spacing.
+- Rounded cards and containers.
+- Soft shadows.
+- Responsive images.
+- Styled buttons.
+- Structured menu sections.
+- Form layouts.
+- Gallery grids.
 
 ### CSS Features
 
 The external stylesheet includes:
 
-- CSS variables for the colour palette
-- Typography styling
-- Header and navigation styling
-- Hero section styling
-- Button styling
-- Card layouts
-- About page layouts
-- Menu layouts
-- Gallery layouts
-- Contact layouts
-- Enquiry form styling
-- Contact form styling
-- Footer styling
-- Responsive layouts
-- Hover states
-- Focus states
-- Active states
-- Media queries
+- CSS variables for the colour palette.
+- Typography styling.
+- Header and navigation styling.
+- Hero section styling.
+- Button styling.
+- Card layouts.
+- Menu and gallery layouts.
+- Contact and enquiry form styling.
+- Footer styling.
+- Hover and focus effects.
+- Responsive layouts and media queries.
 
 ### Responsive Design
 
-The website was tested at different screen sizes using Google Chrome Developer Tools.
+The website was tested at desktop, tablet and mobile screen sizes using Google Chrome.
 
-Testing was performed on:
+The layouts adjust to different screen sizes to keep content, images, navigation and forms usable on smaller screens.
 
-- Desktop screen sizes
-- Tablet screen sizes
-- Mobile screen sizes
+## Part 3 – Functionality, SEO and Testing
 
-The website was checked to ensure that content remains visible and usable at smaller screen sizes.
+Part 3 focused on improving the website's functionality, search engine optimisation, forms, testing and documentation.
 
-The responsive design adjusts layouts, images, cards, forms and other page elements to fit different screen sizes.
+### JavaScript Functionality
 
-### Website Testing
+JavaScript was added to improve the website's interactivity.
 
-Final technical testing was performed after the styling was completed.
+#### Gallery Lightbox
 
-The following were checked:
+The gallery includes a JavaScript lightbox feature.
 
-- All pages display correctly.
-- Navigation links work correctly.
-- Images display correctly.
-- Forms display correctly.
-- Buttons display correctly.
-- Hover effects work correctly.
-- Form focus effects work correctly.
-- Mobile layouts display correctly.
-- Tablet layouts display correctly.
-- Desktop layouts display correctly.
-- No major horizontal overflow was present during responsive testing.
+- Visitors can click gallery images to enlarge them.
+- The enlarged image displays over the page.
+- A close button allows visitors to close the image.
+- Visitors can also close the lightbox by clicking outside the image.
+- The Escape key can be used to close the lightbox.
+- The functionality works across the gallery sections.
 
-## Development Tools
+The functionality is implemented in `assets/js/gallery.js`.
 
-The website was developed using:
+#### Menu Search
 
-- HTML5.
-- Visual Studio Code.
-- GitHub.
-- Google Chrome for testing.
+The menu page includes a search feature.
 
-The website uses separate HTML pages connected through HTML links and relative file paths.
+- Visitors can enter a menu item or keyword.
+- Menu items are filtered according to the search text.
+- Matching items remain visible.
+- Non-matching items are hidden.
+- A message displays the number of matching items.
+- A message is also displayed when no matching items are found.
 
-## Navigation
+The functionality is implemented in `assets/js/menu.js`.
 
-The website uses HTML links to connect the different pages.
+### Search Engine Optimisation (SEO)
 
-The main navigation consists of:
+SEO improvements were made to help search engines understand the website content.
 
-Home | About Us | Menu | Gallery | Enquiry | Contact
+The improvements include:
 
-The Home page links to the pages inside the pages folder.
+- Unique page titles.
+- Meta descriptions for the website pages.
+- Relevant headings.
+- Descriptive image alternative text.
+- Internal links between website pages.
+- Mobile-friendly layouts.
+- Relevant café-related keywords.
 
-The pages inside the pages folder use the correct relative path to return to the Home page because index.html is located in the main project folder.
+### Forms
 
-Navigation links were tested to ensure that visitors can move between the different sections of the website.
+The website contains an enquiry form and a contact form.
 
-## Forms
+Both forms use Formspree to process submitted messages.
 
-### Enquiry Form
+HTML form validation was added to help ensure visitors provide the required information.
 
-The Enquiry page contains a form with:
+The forms include relevant fields such as names, email addresses and messages. The enquiry form also includes an enquiry type field.
 
-- Name.
-- Surname.
-- Email.
-- Enquiry type.
-- Message.
-- Submit button.
+### Testing
 
-### Contact Form
+The website was tested using Google Chrome.
 
-The Contact page contains a contact form for visitors to provide their information and message.
+Testing included:
+
+- Opening all six website pages.
+- Testing navigation links.
+- Checking image paths.
+- Testing the gallery lightbox.
+- Testing the menu search.
+- Testing the contact form.
+- Testing the enquiry form.
+- Checking required form fields.
+- Checking form submission.
+- Testing responsive layouts.
+- Checking the website for broken links and display issues.
+
+The website was checked at mobile, tablet and desktop screen sizes.
+
+## GitHub Repository
+
+The project is maintained using GitHub for version control.
+
+Changes are committed using descriptive commit messages and pushed to the remote repository.
+
+The GitHub repository contains the website files, assets, documentation and supporting project material.
+
+Repository:  
+https://github.com/kuhlekonke-joaquim/Cotiere-Brew-Cafe
+
+## Evidence
+
+An `evidence` folder is included in the project to organise screenshots of the website's functionality and testing.
+
+The screenshots include:
+
+- Homepage.
+- Gallery lightbox.
+- Menu search.
+- Contact form.
+- Form validation.
+- Enquiry form.
+- Responsive mobile layout.
+- GitHub repository.
 
 ## Changelog
 
@@ -407,12 +285,7 @@ The Contact page contains a contact form for visitors to provide their informati
 
 - Created the Côtière Brew Café project.
 - Created the initial project folder structure.
-- Created the Home page.
-- Created the About Us page.
-- Created the Menu page.
-- Created the Gallery page.
-- Created the Enquiry page.
-- Created the Contact page.
+- Created the six HTML pages.
 - Added the initial navigation structure.
 - Added the footer.
 
@@ -420,18 +293,12 @@ The Contact page contains a contact form for visitors to provide their informati
 
 - Added café information.
 - Added food and pastry content.
-- Added beverage content.
-- Added menu prices.
+- Added beverage content and menu prices.
 - Added featured items.
 - Added café images.
-- Added exterior gallery section.
-- Added interior gallery section.
-- Added featured items gallery section.
-- Added enquiry form.
-- Added contact form.
-- Added contact information.
-- Added opening hours.
-- Added location information.
+- Added gallery sections.
+- Added enquiry and contact forms.
+- Added contact information and opening hours.
 
 ### Version 1.2 – Navigation and Testing
 
@@ -439,64 +306,34 @@ The Contact page contains a contact form for visitors to provide their informati
 - Fixed navigation paths.
 - Tested links between pages.
 - Checked image paths.
-- Checked website content.
-- Checked forms.
-- Reviewed the website structure.
+- Reviewed website content and structure.
 
 ### Version 1.3 – Styling and Responsive Design
 
 - Added an external CSS stylesheet.
 - Added the café colour palette.
 - Improved typography and page layouts.
-- Styled the Home page.
-- Styled the About Us page.
-- Styled the Menu page.
-- Styled the Gallery page.
-- Styled the Enquiry page.
-- Styled the Contact page.
-- Added button hover effects.
-- Added navigation hover effects.
-- Added form focus effects.
-- Added responsive layouts for different screen sizes.
-- Tested the website on desktop, tablet and mobile screen sizes.
+- Styled all six website pages.
+- Added hover and focus effects.
+- Added responsive layouts.
+- Tested desktop, tablet and mobile screen sizes.
 
-### Final Updates
+### Version 1.4 – JavaScript, SEO and Final Improvements
 
-- Continue improving page layouts and presentation.
-- Complete final testing.
-- Check all links and images.
-- Complete final documentation.
-- Commit final changes.
-- Push the final project to the remote GitHub repository.
-
-## Testing and Debugging
-
-The website was tested using Google Chrome.
-
-Testing includes:
-
-- Opening each HTML page.
-- Testing navigation between all pages.
-- Testing the Home link from pages inside the pages folder.
-- Checking image paths.
-- Checking that images display correctly.
-- Checking that forms display correctly.
-- Checking website content.
-- Checking the footer.
-- Checking for broken internal links.
-- Fixing incorrect file paths and navigation links.
-
-## GitHub Repository
-
-The project is maintained using a GitHub repository as required by the project brief.
-
-Changes are committed regularly using descriptive commit messages.
-
-The local project changes are pushed to the remote GitHub repository.
-
-The repository contains the website files, project documentation and README.md.
+- Added the gallery lightbox using JavaScript.
+- Updated the gallery functionality to work across all gallery sections.
+- Added menu search functionality.
+- Added unique page titles and meta descriptions.
+- Improved image alternative text.
+- Updated contact and enquiry forms to use Formspree.
+- Added HTML form validation.
+- Tested form submissions and website functionality.
+- Captured screenshots for project evidence.
+- Updated project documentation.
 
 ## References
+
+### Part 1 References
 
 Swan Café. (n.d.). Swan Café. Available at: https://swancafe.co.za [Accessed 14 August 2026].
 
@@ -508,9 +345,7 @@ Paris Cape Town. (n.d.). Paris Cape Town. Available at: https://www.ubereats.com
 
 Pinterest. (n.d.). Pinterest. Available at: https://www.pinterest.com [Accessed 14 August 2026].
 
-Pinterest was used to locate visual references and images for the café website. Image source information is documented in the project's research and image-sourcing material.
-
-Part 2 References
+### Part 2 References
 
 MDN Web Docs. (n.d.). CSS flexible box layout. Available at: https://developer.mozilla.org/en-US/docs/Web/CSS/Guides/Flexible_box_layout [Accessed 17 September 2026].
 
@@ -524,26 +359,8 @@ MDN Web Docs. (n.d.). Pseudo-classes. Available at: https://developer.mozilla.or
 
 MDN Web Docs. (n.d.). Responsive web design. Available at: https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/CSS_layout/Responsive_Design [Accessed 17 September 2026].
 
-## Project Documentation
-
-The project documentation includes:
-
-- Project proposal.
-- Sitemap.
-- Wireframes.
-- Research material.
-- Content research.
-- Research sources.
-- Image sources.
-- README.md.
-
-The project proposal contains the required planning information and visual sitemap.
-
-The research material contains the supporting information and sources used to develop the website content.
-
 ## Author
 
 Kuhlekonke Joaquim  
-Student Number: ST10534065  
 Diploma in Software Development  
 Rosebank International University College NMB
