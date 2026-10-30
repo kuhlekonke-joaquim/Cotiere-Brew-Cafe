@@ -2,11 +2,11 @@
 // Wait until the HTML page has loaded
 document.addEventListener("DOMContentLoaded", function () {
 
-    // Find the gallery section
-    const gallery = document.querySelector(".gallery-grid");
+    // Find all gallery sections
+    const galleries = document.querySelectorAll(".gallery-grid");
 
-    // Stop if the gallery does not exist
-    if (!gallery) {
+    // Stop if no gallery exists
+    if (galleries.length === 0) {
         return;
     }
 
@@ -27,31 +27,35 @@ document.addEventListener("DOMContentLoaded", function () {
     const lightboxCaption = lightbox.querySelector(".lightbox-caption");
     const closeButton = lightbox.querySelector(".lightbox-close");
 
-    // Open an image when a gallery image is clicked
-    gallery.addEventListener("click", function (event) {
+    // Open images from every gallery section
+    galleries.forEach(function (gallery) {
 
-        const clickedImage = event.target.closest("img");
+        gallery.addEventListener("click", function (event) {
 
-        if (!clickedImage || !gallery.contains(clickedImage)) {
-            return;
-        }
+            const clickedImage = event.target.closest("img");
 
-        lightboxImage.src = clickedImage.src;
-        lightboxImage.alt = clickedImage.alt;
+            if (!clickedImage || !gallery.contains(clickedImage)) {
+                return;
+            }
 
-        const galleryItem = clickedImage.closest(".gallery-item");
-        const caption = galleryItem
-            ? galleryItem.querySelector(".gallery-caption")
-            : null;
+            lightboxImage.src = clickedImage.src;
+            lightboxImage.alt = clickedImage.alt;
 
-        lightboxCaption.textContent = caption
-            ? caption.textContent.trim()
-            : clickedImage.alt;
+            const galleryItem = clickedImage.closest(".gallery-item");
+            const caption = galleryItem
+                ? galleryItem.querySelector(".gallery-caption")
+                : null;
 
-        lightbox.classList.add("active");
-        document.body.classList.add("lightbox-open");
+            lightboxCaption.textContent = caption
+                ? caption.textContent.trim()
+                : clickedImage.alt;
 
-        closeButton.focus();
+            lightbox.classList.add("active");
+            document.body.classList.add("lightbox-open");
+
+            closeButton.focus();
+        });
+
     });
 
     // Close the lightbox
