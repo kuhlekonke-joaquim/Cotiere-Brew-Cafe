@@ -83,19 +83,26 @@
 
                     <!-- Enquiry form -->
                     
-<form action="https://formsubmit.co/jaqueen.jakkie@gmail.com" method="POST">
+
+<form action="https://formspree.io/f/mbggaldz" method="POST">
 
     <!-- Email subject -->
-    <input type="hidden" name="_subject" value="New Enquiry - Côtière Brew Café">
-
-    <!-- Email layout -->
-    <input type="hidden" name="_template" value="table">
+    <input
+        type="hidden"
+        name="_subject"
+        value="New Enquiry - Côtière Brew Café"
+    >
 
     <!-- Spam protection -->
-    <input type="text" name="_honey" style="display:none">
+    <input
+        type="text"
+        name="_gotcha"
+        style="display:none"
+    >
 
     <!-- Name and surname -->
     <div class="form-group">
+
         <label for="name">Name and Surname</label>
 
         <input
@@ -107,10 +114,12 @@
             maxlength="80"
             required
         >
+
     </div>
 
     <!-- Email address -->
     <div class="form-group">
+
         <label for="email">Email Address</label>
 
         <input
@@ -120,13 +129,19 @@
             placeholder="Enter your email address"
             required
         >
+
     </div>
 
     <!-- Enquiry type -->
     <div class="form-group">
+
         <label for="enquiry-type">Enquiry Type</label>
 
-        <select id="enquiry-type" name="enquiry_type" required>
+        <select
+            id="enquiry-type"
+            name="enquiry_type"
+            required
+        >
 
             <option value="" disabled selected>
                 Select an enquiry type
@@ -138,10 +153,12 @@
             <option value="Feedback">Feedback</option>
 
         </select>
+
     </div>
 
     <!-- Message -->
     <div class="form-group">
+
         <label for="message">Message</label>
 
         <textarea
@@ -153,14 +170,18 @@
             placeholder="Type your enquiry here..."
             required
         ></textarea>
+
     </div>
 
     <!-- Submit button -->
     <div class="form-submit">
+
         <input type="submit" value="Send Enquiry">
+
     </div>
 
 </form>
+
 
 
 
